@@ -2,8 +2,8 @@
 
 ## 0. update/upgrate KALI LINUX.
 
-![Image](/Task3/upgrade-kali.png)
-![Image](/Task3/SSH-kali.png)
+![Image](/Task3/img/upgrade-kali.png)
+![Image](/Task3/img/SSH-kali.png)
 
 ## 1. На VM Win10/WinServer установить SSH Server и запустить его.
 
@@ -59,8 +59,8 @@
 
 Теперь ваш SSH-сервер должен быть установлен и запущен. Вы можете подключиться к нему с другого устройства, используя SSH-клиент.
 
-![Image](/Task3/SSH-win10.png)
-![Image](/Task3/SSH-win2019.png)
+![Image](/Task3/img/SSH-win10.png)
+![Image](/Task3/img/SSH-win2019.png)
 
 ## 2. Разрешить подключение по RDP.
 
@@ -107,11 +107,11 @@
 
 После выполнения этих шагов вы сможете подключаться к вашему компьютеру по RDP.
 
-![Image](/Task3/open-RDP.png)
+![Image](/Task3/img/open-RDP.png)
 
 ## 3. Провести сканирование подсети с ВМ Kali
 
-![Image](/Task3/nmap-win10.png)
+![Image](/Task3/img/nmap-win10.png)
 
 ## 4. Провести BruteForce (ssh) пароля от ВМ Win10
 
@@ -226,7 +226,7 @@ sudo apt install crunch
 
 `Crunch` — это мощный инструмент для генерации словарей, который может быть настроен под конкретные нужды. Убедитесь, что вы используете его этично и в соответствии с законами вашей страны.
 
-![Image](/Task3/scan-pass.png)
+![Image](/Task3/img/scan-pass.png)
 
 
 На FireWall Win10 разрешить подключение
@@ -296,7 +296,7 @@ sudo apt install crunch
 - Убедитесь, что у вас есть все необходимые права для внесения изменений в настройки брандмауэра.
 - Если ваша Windows Server использует динамический IP-адрес, вам может понадобиться настроить статический IP-адрес или использовать DHCP-резервирование, чтобы IP-адрес не изменялся.
 
-![Image](/Task3/SSH%20Access%20from%20WinServer.png)
+![Image](/Task3/img/SSH%20Access%20from%20WinServer.png)
 
 
 ## 6. Настроить в политиках блокировки УЗ блокировку на 5 мин после 7 не удачных попыток.
@@ -345,6 +345,6 @@ secedit /export /cfg C:\secpol.cfg
 
 Теперь ваша система будет блокировать учетные записи на 5 минут после 7 неудачных попыток входа.
 
-![Image](/Task3/polici-bloc.png)
+![Image](/Task3/img/polici-bloc.png)
 
 

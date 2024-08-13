@@ -384,3 +384,7 @@
 - **192.168.100.1** → `::ffff:c0a8:6401`
 - **172.16.0.1** → `::ffff:ac10:1`
 - **10.10.10.10** → `::ffff:a:aaaa`
+
+## Install Cisco Packet Tracer.
+
+![Image](/Task4/img/PT.png)

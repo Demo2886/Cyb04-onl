@@ -87,5 +87,6 @@
 Если все настроено правильно, компьютеры должны успешно обмениваться данными через роутер.
 
 ![Image](/Task5/img/CPT1.png)
+
 ![Image](/Task5/img/ping1.png)
 ![Image](/Task5/img/ping2.png)

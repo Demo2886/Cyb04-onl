@@ -90,3 +90,107 @@
 
 ![Image](/Task5/img/ping1.png)
 ![Image](/Task5/img/ping2.png)
+
+
+# Сегментировать сеть на 10 и 20 vlan, добиться видимости хостов
+
+Для сегментирования сети на VLAN 10 и 20 и обеспечения видимости хостов между этими VLAN, необходимо настроить коммутаторы и роутер. Вот пошаговая инструкция:
+
+### 1. Настройка коммутаторов
+
+1. **Настройка VLAN на коммутаторах**:
+   - Подключитесь к каждому коммутатору и перейдите в режим глобальной конфигурации:
+     ```shell
+     Switch> enable
+     Switch# configure terminal
+     ```
+   - Создайте VLAN 10 и 20:
+     ```shell
+     Switch(config)# vlan 10
+     Switch(config-vlan)# name VLAN10
+     Switch(config-vlan)# exit
+
+     Switch(config)# vlan 20
+     Switch(config-vlan)# name VLAN20
+     Switch(config-vlan)# exit
+     ```
+
+2. **Назначьте порты коммутаторов в соответствующие VLAN**:
+   - Например, если порт Fa0/1 подключен к компьютеру в VLAN 10, а порт Fa0/2 подключен к компьютеру в VLAN 20:
+     ```shell
+     Switch(config)# interface FastEthernet0/1
+     Switch(config-if)# switchport mode access
+     Switch(config-if)# switchport access vlan 10
+     Switch(config-if)# exit
+
+     Switch(config)# interface FastEthernet0/2
+     Switch(config-if)# switchport mode access
+     Switch(config-if)# switchport access vlan 20
+     Switch(config-if)# exit
+     ```
+
+3. **Настройте транковые порты для соединения с роутером**:
+   - Например, если порт Fa0/24 подключен к роутеру:
+     ```shell
+     Switch(config)# interface FastEthernet0/24
+     Switch(config-if)# switchport mode trunk
+     Switch(config-if)# switchport trunk allowed vlan 10,20
+     Switch(config-if)# exit
+     ```
+
+### 2. Настройка роутера
+
+1. **Настройка интерфейсов роутера для VLAN**:
+   - Подключитесь к роутеру и перейдите в режим глобальной конфигурации:
+     ```shell
+     Router> enable
+     Router# configure terminal
+     ```
+   - Настройте интерфейсы для VLAN 10 и 20:
+     ```shell
+     Router(config)# interface GigabitEthernet0/0.10
+     Router(config-subif)# encapsulation dot1Q 10
+     Router(config-subif)# ip address 192.168.10.1 255.255.255.0
+     Router(config-subif)# exit
+
+     Router(config)# interface GigabitEthernet0/0.20
+     Router(config-subif)# encapsulation dot1Q 20
+     Router(config-subif)# ip address 192.168.20.1 255.255.255.0
+     Router(config-subif)# exit
+     ```
+
+2. **Настройка маршрутизации между VLAN**:
+   - Включите маршрутизацию между VLAN:
+     ```shell
+     Router(config)# ip routing
+     ```
+
+### 3. Настройка компьютеров
+
+1. **Настройте IP-адреса компьютеров**:
+   - Для компьютера в VLAN 10:
+     ```shell
+     IP Address: 192.168.10.2
+     Subnet Mask: 255.255.255.0
+     Default Gateway: 192.168.10.1
+     ```
+   - Для компьютера в VLAN 20:
+     ```shell
+     IP Address: 192.168.20.2
+     Subnet Mask: 255.255.255.0
+     Default Gateway: 192.168.20.1
+     ```
+
+### 4. Проверка соединения
+
+1. **Проверьте соединение**:
+   - С каждого компьютера попробуйте выполнить команду `ping` до другого компьютера:
+     ```shell
+     ping 192.168.20.2
+     ```
+     и
+     ```shell
+     ping 192.168.10.2
+     ```
+
+Если все настроено правильно, компьютеры должны успешно обмениваться данными между VLAN 10 и 20 через роутер.

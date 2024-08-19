@@ -129,15 +129,6 @@
      Switch(config-if)# exit
      ```
 
-3. **Настройте транковые порты для соединения с роутером**:
-   - Например, если порт Fa0/24 подключен к роутеру:
-     ```shell
-     Switch(config)# interface FastEthernet0/24
-     Switch(config-if)# switchport mode trunk
-     Switch(config-if)# switchport trunk allowed vlan 10,20
-     Switch(config-if)# exit
-     ```
-
 ### 2. Настройка роутера
 
 1. **Настройка интерфейсов роутера для VLAN**:
@@ -148,13 +139,11 @@
      ```
    - Настройте интерфейсы для VLAN 10 и 20:
      ```shell
-     Router(config)# interface GigabitEthernet0/0.10
-     Router(config-subif)# encapsulation dot1Q 10
+     Router(config)# interface GigabitEthernet0/0
      Router(config-subif)# ip address 192.168.10.1 255.255.255.0
      Router(config-subif)# exit
 
-     Router(config)# interface GigabitEthernet0/0.20
-     Router(config-subif)# encapsulation dot1Q 20
+     Router(config)# interface GigabitEthernet0/1
      Router(config-subif)# ip address 192.168.20.1 255.255.255.0
      Router(config-subif)# exit
      ```

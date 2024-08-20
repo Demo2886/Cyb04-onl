@@ -336,11 +336,8 @@ sudo systemctl status ssh
 ```
 </details>
 
-<details>
-<summary><b>5. --TODO: WireGuard VPN.</b></summary>
+## 5. --TODO: WireGuard VPN.
 
 <!-- TODO: WireGuard VPN. -->
 
 ![Image](/Task6/img/todo.png)
-
-</details>

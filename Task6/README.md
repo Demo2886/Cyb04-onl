@@ -109,7 +109,7 @@ IPSec предоставляет мощные средства для защит
 ```bash
 ls ~/.ssh/tms/
 ```
-![Image](/Task6/img/ssh-agent.png)
+![Image](/Task6/img/gen-keys.png)
 
 Вы должны увидеть файлы `id_rsa` (приватный ключ) и `id_rsa.pub` (публичный ключ).
 

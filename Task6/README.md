@@ -334,5 +334,13 @@ sudo ufw enable
 ```bash
 sudo systemctl status ssh
 ```
+</details>
+
+<details>
+<summary><b>5. --TODO: WireGuard VPN.</b></summary>
+
+<!-- TODO: WireGuard VPN. -->
+
+![Image](/Task6/img/todo.png)
 
 </details>

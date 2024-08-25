@@ -18,7 +18,7 @@
 </details>
 
 <details>
-<summary><b>2. Лабораторные работы по OWASP TOP 10.</b></summary>
+<summary><b>Лабораторные работы по OWASP</b></summary>
 
 <details>
 <summary><b>Практика Brocken Access Control</b></summary>

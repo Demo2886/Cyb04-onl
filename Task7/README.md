@@ -40,8 +40,8 @@
 <summary><b>Практика Server-Side Request Forgery</b></summary>
 
 ![Image](/Task7/img/SSRF3.png)
-![Image](/Task7/img/SSRF2.png)
 ![Image](/Task7/img/SSRF1.png)
+![Image](/Task7/img/SSRF2.png)
 
 </details>
 

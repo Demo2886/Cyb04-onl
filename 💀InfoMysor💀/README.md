@@ -81,6 +81,24 @@ This describes the communication options for the target resource.
 
 9. HTTP TRACE
 This performs a message loop-back test along the path to the target resource.
+
+10. HTTP LINK
+The LINK method establishes a link between resources.
+
+11. HTTP UNLINK
+The UNLINK method removes a link between resources.
+
+12. HTTP COPY
+The COPY method copies a resource.
+
+13. HTTP LOCK
+The LOCK method acquires a lock on a resource.
+
+14. HTTP UNLOCK
+The UNLOCK method releases a lock on a resource.
+
+![image](💀InfoMysor💀/img/HTTPRequest.gif)
+
 </details>
 
 

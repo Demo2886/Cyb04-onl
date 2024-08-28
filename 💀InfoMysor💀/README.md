@@ -86,4 +86,4 @@ This describes the communication options for the target resource.
 This performs a message loop-back test along the path to the target resource.
 </details>
 
-![Image](💀InfoMysor/img/HTTPRequest.gif)
+![Image](💀InfoMysor💀/img/HTTPRequest.gif)

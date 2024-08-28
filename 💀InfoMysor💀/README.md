@@ -51,7 +51,7 @@ Git — это распределенная система управления 
 - Всегда тяните, прежде чем нажимать, чтобы избежать конфликтов.
 </details>
 
-![Image](💀InfoMysor/img/gitWorkflow.gif)
+![Image](💀InfoMysor💀/img/gitWorkflow.gif)
 
 
 <details>
@@ -86,4 +86,4 @@ This describes the communication options for the target resource.
 This performs a message loop-back test along the path to the target resource.
 </details>
 
-![Image](💀InfoMysor/img/httpVerbs.png)
+![Image](💀InfoMysor/img/HTTPRequest.gif)

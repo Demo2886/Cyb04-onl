@@ -51,7 +51,7 @@ Git — это распределенная система управления 
 
 
 <div id="header" align="center">
-  <img src="https://github.com/Demo2886/Cyb04-onl/blob/master/%F0%9F%92%80InfoMysor%F0%9F%92%80/img/gitWorkflow.gif"100"/>
+  <img src="https://github.com/Demo2886/Cyb04-onl/blob/master/%F0%9F%92%80InfoMysor%F0%9F%92%80/img/gitWorkflow.gif" width="100"/>
 </div>
 
 # GET, POST, PUT, DELETE… 
@@ -100,6 +100,6 @@ The LOCK method acquires a lock on a resource.
 14. HTTP UNLOCK
 The UNLOCK method releases a lock on a resource.
 
-![image](💀InfoMysor💀/img/HTTPRequest.gif)
-
-
+<div id="header" align="center">
+  <img src="https://github.com/Demo2886/Cyb04-onl/blob/master/%F0%9F%92%80InfoMysor%F0%9F%92%80/img/HTTPRequest.gif" width="100"/>
+</div>

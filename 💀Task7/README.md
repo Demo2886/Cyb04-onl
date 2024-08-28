@@ -13,7 +13,7 @@
 <details>
 <summary><b>1. Изучить SQL запросы.</b></summary>
 
-![Image](/Task7/img/sqlbolt.png)
+![Image](/💀Task7/img/sqlbolt.png)
 
 </details>
 
@@ -23,32 +23,32 @@
 <details>
 <summary><b>Практика Brocken Access Control</b></summary>
 
-![Image](/Task7/img/Brocken%20Access%20Control2.png)
-![Image](/Task7/img/Brocken%20Access%20Control1.png)
+![Image](/💀Task7/img/Brocken%20Access%20Control2.png)
+![Image](/💀ask7/img/Brocken%20Access%20Control1.png)
 
 </details>
 
 <details>
 <summary><b>Практика SQL Injections</b></summary>
 
-![Image](/Task7/img/sql%20Injections1.png)
-![Image](/Task7/img/sql%20Injections2.png)
+![Image](/💀Task7/img/sql%20Injections1.png)
+![Image](/💀Task7/img/sql%20Injections2.png)
 
 </details>
 
 <details>
 <summary><b>Практика Server-Side Request Forgery</b></summary>
 
-![Image](/Task7/img/SSRF3.png)
-![Image](/Task7/img/SSRF1.png)
-![Image](/Task7/img/SSRF2.png)
+![Image](/💀Task7/img/SSRF3.png)
+![Image](/💀Task7/img/SSRF1.png)
+![Image](/💀Task7/img/SSRF2.png)
 
 </details>
 
 <details>
 <summary><b>OWASP Juice Shop</b></summary>
 
-![Image](/Task7/img/OWASP%20Juice%20Shop.png)
+![Image](/💀Task7/img/OWASP%20Juice%20Shop.png)
 
 </details>
 

@@ -1,5 +1,4 @@
-<details>
-<summary>GitWorkflow</summary>
+# Git
 
 Git — это распределенная система управления версиями, которая отслеживает изменения в коде с течением времени. 
 
@@ -52,11 +51,10 @@ Git — это распределенная система управления 
 
 ![Image](💀InfoMysor💀/img/gitWorkflow.gif)
 
-</details>
 
-<details>
-<summary>GET, POST, PUT, DELETE…</summary>
-GET, POST, PUT, DELETE… A list of common HTTP “verbs” in one diagram. The method to download the high-resolution PDF is available at the end.
+# GET, POST, PUT, DELETE… 
+
+A list of common HTTP “verbs” in one diagram. The method to download the high-resolution PDF is available at the end.
 
 1. HTTP GET
 This retrieves a resource from the server. It is idempotent. Multiple identical requests return the same result.
@@ -101,7 +99,5 @@ The LOCK method acquires a lock on a resource.
 The UNLOCK method releases a lock on a resource.
 
 ![image](💀InfoMysor💀/img/HTTPRequest.gif)
-
-</details>
 
 

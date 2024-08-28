@@ -51,8 +51,9 @@ Git — это распределенная система управления 
 
 
 <div id="header" align="center">
-  <img src="💀InfoMysor💀/img/gitWorkflow.gif"100"/>
+  <img src="/Cyb04-onl/💀InfoMysor💀/img/gitWorkflow.gif"100"/>
 </div>
+
 ![Image](💀InfoMysor💀/img/gitWorkflow.gif)
 
 

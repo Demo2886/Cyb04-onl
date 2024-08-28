@@ -53,7 +53,6 @@ Git — это распределенная система управления 
 
 ![Uploading gitWorkflow.gif…]()
 
-![Image](💀InfoMysor💀/img/gitWorkflow.gif)
 
 <details>
 <summary>GET, POST, PUT, DELETE…</summary>

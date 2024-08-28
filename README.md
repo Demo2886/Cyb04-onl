@@ -20,5 +20,3 @@
 - ⚡  ...
 - 🚀 Productivity ambassador  
 - 🎓 Lifelong learner
-
-![Uploading todo.png…]()

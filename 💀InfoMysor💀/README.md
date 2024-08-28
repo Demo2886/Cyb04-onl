@@ -52,6 +52,7 @@ Git — это распределенная система управления 
 </details>
 
 ![Uploading gitWorkflow.gif…]()
+![Uploading gitWorkflow.gif…]()
 
 
 <details>

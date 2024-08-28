@@ -53,7 +53,6 @@ Git — это распределенная система управления 
 
 ![Image](💀InfoMysor💀/img/gitWorkflow.gif)
 
-
 <details>
 <summary>GET, POST, PUT, DELETE…</summary>
 GET, POST, PUT, DELETE… A list of common HTTP “verbs” in one diagram. The method to download the high-resolution PDF is available at the end.

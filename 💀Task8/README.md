@@ -31,9 +31,9 @@ gcc xerxes.c -o xerxes
 ``` bash
 ./xerxes tsarev.biz 80
 ```
-![image](Cyb04-onl/💀Task8/img/curl-site-x.png)
+![image](💀Task8/img/curl-site-x.png)
 
-![image](Cyb04-onl/💀Task8/img/x1.png)
-![image](Cyb04-onl/💀Task8/img/x2.png)
+![image](💀Task8/img/x1.png)
+![image](💀Task8/img/x2.png)
 
 ❗ Примечание: Информация только для исследования, обучения или проведения аудита. Применение в корыстных целях карается законом.

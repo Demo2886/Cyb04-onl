@@ -31,9 +31,9 @@ gcc xerxes.c -o xerxes
 ``` bash
 ./xerxes tsarev.biz 80
 ```
-![image](/Cyb04-onl//💀Task8/img/curl-site-x.png)
+![image](/💀Task8/img/curl-site-x.png)
 
-![image](/Cyb04-onl/💀Task8/img/x1.png)
+![image](/💀Task8/img/x1.png)
 
 ## Как видеть результат атаки, возросшая нагрузка на процессор?
 
@@ -49,7 +49,7 @@ gcc xerxes.c -o xerxes
 
 В данный момент нагрузка увеличилась на 10.7% 
 
-![image](/Cyb04-onl/💀Task8/img/x2.png)
+![image](/💀Task8/img/x2.png)
 
 
 

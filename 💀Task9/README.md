@@ -16,5 +16,5 @@
 
 ![Images](/💀Task9/img/attack.png)
 
-![Images](/💀Task9/img/set-maill.png)
+![Images](/💀Task9/img/set-mail.png)
 

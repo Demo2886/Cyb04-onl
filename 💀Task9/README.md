@@ -141,5 +141,6 @@ Do you want to attach an inline file - [y/n]: n
 ```
 
 Жирная подсказка: <span style="color: black; background-color: black;">Индусы на Youtube все расскажут!!!</span>
+<span style="background-color: black; color: black;">Этот текст замазан</span>
 
 

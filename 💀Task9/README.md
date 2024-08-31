@@ -10,3 +10,16 @@
 
 ![Images](/💀Task9/img/install-s.png)
 ![Images](/💀Task9/img/cred.png)
+
+
+## Видео
+
+  <div id="player"></div>
+  <script src="asciinema-player.min.js"></script>
+  <script>
+    AsciinemaPlayer.create(
+      '/assets/93620.json',
+      document.getElementById('player'),
+      { cols: 150, rows: 38 }
+    );
+  </script>

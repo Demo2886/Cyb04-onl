@@ -140,8 +140,5 @@ Do you want to attach an inline file - [y/n]: n
       Press <return> to continue
 ```
 
-Жирная подсказка: <span style="color: black; background-color: black;">Индусы на Youtube все расскажут!!!</span>
-<span style="background-color: black; color: black;">Этот текст замазан</span>
-<pre style="background-color: black; color: black;">Этот текст замазан</pre>
-
-<span style="color: rgba(0, 0, 0, 0.2);">Your text here</span>
+Жирная подсказка: 
+<span style="color: black; background-color: black;">Индусы на Youtube все расскажут!!!</span>

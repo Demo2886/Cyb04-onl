@@ -12,11 +12,9 @@
 ![Images](/💀Task9/img/cred.png)
 
 
-## Я нашел идеальное видео, но, у меня возникла ошибка. Я ее не победил! 
-```
-[!] It appears your password was incorrect.
-Printing response: a bytes-like object is required, not 'str'
+## Mailer Attack
 
-      Press <return> to continue
-```
-[![asciicast](https://asciinema.org/a/93620.svg)](https://asciinema.org/a/93620)
+![Images](/💀Task9/img/attack.png)
+
+![Images](/💀Task9/img/set-maill.png)
+

@@ -58,7 +58,7 @@
 
            Visit: https://www.trustedsec.com
 
-   It`s easy to update using the PenTesters Framework! (PTF)
+   It's easy to update using the PenTesters Framework! (PTF)
 Visit https://github.com/trustedsec/ptf to update all your tools!
 
 
@@ -106,7 +106,7 @@ set:phishing>1
 [-] Available templates:
 1: Baby Pics
 2: WOAAAA!!!!!!!!!! This is crazy...
-3: Dan Brown`s Angels & Demons
+3: Dan Brown's Angels & Demons
 4: Urgent Security Updates
 5: Have you seen this?
 6: Order Confirmation

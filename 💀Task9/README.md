@@ -12,22 +12,11 @@
 ![Images](/💀Task9/img/cred.png)
 
 
-## Видео
+## Я нашел идеальное видео, нао у меня возникла ошибка. Я ее не победил! 
+```
+[!] It appears your password was incorrect.
+Printing response: a bytes-like object is required, not 'str'
 
-<!DOCTYPE html>
-<html>
-<head>
-  <link rel="stylesheet" type="text/css" href="asciinema-player.css" />
-</head>
-<body>
-  <div id="player"></div>
-  <script src="asciinema-player.min.js"></script>
-  <script>
-    AsciinemaPlayer.create(
-      '/💀Task9//assets/93620.json',
-      document.getElementById('player'),
-      { cols: 150, rows: 38 }
-    );
-  </script>
-</body>
-</html>
+      Press <return> to continue
+```
+[![asciicast](https://asciinema.org/a/93620.svg)](https://asciinema.org/a/93620)

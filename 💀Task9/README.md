@@ -127,7 +127,7 @@ set:phishing> Your gmail email address: ********@gmail.com
 
 set:phishing> The FROM NAME the user will see: ATTACE
 
-Email password:
+Email password:*********
 
 set:phishing> Flag this message/s as high priority? [yes|no]: no
 

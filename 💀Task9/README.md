@@ -115,8 +115,10 @@ set:phishing>1
 9: How long has it been?
 10: New Update
 11: Strange internet usage from your computer
+
 set:phishing>2
-set:phishing> Send email to: demo2886@yandex.by
+
+set:phishing> Send email to: ********@yandex.by
 
   1. Use a gmail Account for your email attack.
   2. Use your own server or open relay

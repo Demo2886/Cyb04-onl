@@ -144,3 +144,4 @@ Do you want to attach an inline file - [y/n]: n
 <span style="background-color: black; color: black;">Этот текст замазан</span>
 <pre style="background-color: black; color: black;">Этот текст замазан</pre>
 
+<span style="color: rgba(0, 0, 0, 0.2);">Your text here</span>

@@ -102,6 +102,7 @@ set:mailer>1
        2. One-Time Use Email Template
 
 set:phishing>1
+
 [-] Available templates:
 1: Baby Pics
 2: WOAAAA!!!!!!!!!! This is crazy...
@@ -121,12 +122,19 @@ set:phishing> Send email to: demo2886@yandex.by
   2. Use your own server or open relay
 
 set:phishing>1
-set:phishing> Your gmail email address: netip.no@gmail.com
+
+set:phishing> Your gmail email address: ********@gmail.com
+
 set:phishing> The FROM NAME the user will see: ATTACE
+
 Email password:
+
 set:phishing> Flag this message/s as high priority? [yes|no]: no
+
 Do you want to attach a file - [y/n]: n
+
 Do you want to attach an inline file - [y/n]: n
+
 [*] SET has finished sending the emails
 
       Press <return> to continue

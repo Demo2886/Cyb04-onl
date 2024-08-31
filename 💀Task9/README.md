@@ -14,12 +14,20 @@
 
 ## Видео
 
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="asciinema-player.css" />
+</head>
+<body>
   <div id="player"></div>
   <script src="asciinema-player.min.js"></script>
   <script>
     AsciinemaPlayer.create(
-      '/assets/93620.json',
+      '/💀Task9//assets/93620.json',
       document.getElementById('player'),
       { cols: 150, rows: 38 }
     );
   </script>
+</body>
+</html>

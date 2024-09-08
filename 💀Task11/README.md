@@ -6,8 +6,10 @@
     - Windows
     - Linux
     - Network
+    - PRE
     - Office 365
     - SaaS
+    - IaaS
 
 #### 1. План защиты
 

@@ -7,7 +7,7 @@
     - Linux
     - Network
     - Office 365
-    - Saas
+    - SaaS
 
 #### 1. План защиты
 

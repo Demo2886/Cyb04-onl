@@ -1,0 +1,32 @@
+- name: Установить libpam-cracklib
+  apt:
+    name: libpam-cracklib
+    state: present
+
+- name: Настроить политику паролей в /etc/login.defs
+  lineinfile:
+    dest: /etc/login.defs
+    regexp: '^{{ item.key }}'
+    line: '{{ item.key }} {{ item.value }}'
+  loop:
+    - { key: 'PASS_MAX_DAYS', value: '90' }
+    - { key: 'PASS_MIN_DAYS', value: '0' }
+    - { key: 'PASS_WARN_AGE', value: '5' }
+
+- name: Настроить политику сложности паролей в /etc/pam.d/common-password
+  template:
+    src: common-password.j2
+    dest: /etc/pam.d/common-password
+    owner: root
+    group: root
+    mode: '0644'
+
+- name: Отключить root вход по SSH
+  copy:
+    src: sshd_config
+    dest: /etc/ssh/sshd_config
+    owner: root
+    group: root
+    mode: '0644'
+  notify:
+    - restart ssh

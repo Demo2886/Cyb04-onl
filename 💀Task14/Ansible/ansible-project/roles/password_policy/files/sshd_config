@@ -1,0 +1,6 @@
+# roles/password_policy/files/sshd_config
+
+# Отключаем root-доступ по SSH
+PermitRootLogin no
+
+# Далее идут другие стандартные параметры конфигурации SSH, если необходимо

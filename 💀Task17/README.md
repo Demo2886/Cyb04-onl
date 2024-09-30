@@ -2,7 +2,7 @@
 
 ### 0. Проверка установлен ли Docker
 
-![img](/Cyb04-onl/💀Task17/img/docker-v.png)
+![img](/💀Task17/img/docker-v.png)
 
 ### 1. Скачать образ Ubuntu 18.04 с hub.docker.io
 

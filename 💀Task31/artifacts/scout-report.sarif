@@ -1,0 +1,2802 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "fullName": "Docker Scout",
+          "informationUri": "https://docker.com/products/docker-scout",
+          "name": "docker scout",
+          "rules": [
+            {
+              "id": "GHSA-56pw-mpj4-fxww",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "GHSA-56pw-mpj4-fxww"
+              },
+              "helpUri": "https://scout.docker.com/v/GHSA-56pw-mpj4-fxww?s=github&n=pillow&t=pypi&vr=%3C10.0.1",
+              "help": {
+                "text": "Pillow versions before v10.0.1 bundled libwebp binaries in wheels that are vulnerable to CVE-2023-5129 (previously CVE-2023-4863). Pillow v10.0.1 upgrades the bundled libwebp binary to v1.3.2.\n",
+                "markdown": "> Pillow versions before v10.0.1 bundled libwebp binaries in wheels that are vulnerable to CVE-2023-5129 (previously CVE-2023-4863). Pillow v10.0.1 upgrades the bundled libwebp binary to v1.3.2.\n\n|                |                       |\n|----------------|-----------------------|\n| Package        | pkg:pypi/pillow@8.0.0 |\n| Affected range | <10.0.1               |\n| Fixed version  | 10.0.1                |\n"
+              },
+              "properties": {
+                "affected_version": "<10.0.1",
+                "cvssV3_severity": "HIGH",
+                "fixed_version": "10.0.1",
+                "purls": [
+                  "pkg:pypi/pillow@8.0.0"
+                ],
+                "security-severity": "7.1",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-28675",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2021-28675: Improper Handling of Parameters"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2021-28675?s=github&n=pillow&t=pypi&vr=%3C8.2.0",
+              "help": {
+                "text": "An issue was discovered in Pillow before 8.2.0. `PSDImagePlugin.PsdImageFile` lacked a sanity check on the number of input layers relative to the size of the data block. This could lead to a DoS on `Image.open` prior to `Image.load`.\n",
+                "markdown": "> An issue was discovered in Pillow before 8.2.0. `PSDImagePlugin.PsdImageFile` lacked a sanity check on the number of input layers relative to the size of the data block. This could lead to a DoS on `Image.open` prior to `Image.load`.\n\n|                |                                                                 |\n|----------------|-----------------------------------------------------------------|\n| Package        | pkg:pypi/pillow@8.0.0                                           |\n| Affected range | <8.2.0                                                          |\n| Fixed version  | 8.2.0                                                           |\n| CVSS Score     |                                                             7.1 |\n| CVSS Vector    | CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N |\n"
+              },
+              "properties": {
+                "affected_version": "<8.2.0",
+                "cvssV3": 7.1,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+                "fixed_version": "8.2.0",
+                "purls": [
+                  "pkg:pypi/pillow@8.0.0"
+                ],
+                "security-severity": "7.1",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2024-28219",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2024-28219: Buffer Copy without Checking Size of Input ('Classic Buffer Overflow')"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2024-28219?s=github&n=pillow&t=pypi&vr=%3C10.3.0",
+              "help": {
+                "text": "In _imagingcms.c in Pillow before 10.3.0, a buffer overflow exists because strcpy is used instead of strncpy.\n",
+                "markdown": "> In _imagingcms.c in Pillow before 10.3.0, a buffer overflow exists because strcpy is used instead of strncpy.\n\n|                |                                                                 |\n|----------------|-----------------------------------------------------------------|\n| Package        | pkg:pypi/pillow@8.0.0                                           |\n| Affected range | <10.3.0                                                         |\n| Fixed version  | 10.3.0                                                          |\n| CVSS Score     |                                                             7.3 |\n| CVSS Vector    | CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N |\n"
+              },
+              "properties": {
+                "affected_version": "<10.3.0",
+                "cvssV3": 7.3,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+                "fixed_version": "10.3.0",
+                "purls": [
+                  "pkg:pypi/pillow@8.0.0"
+                ],
+                "security-severity": "7.3",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-0286",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-0286: Access of Resource Using Incompatible Type ('Type Confusion')"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-0286?s=github&n=cryptography&t=pypi&vr=%3E%3D0.8.1%2C%3C39.0.1",
+              "help": {
+                "text": "pyca/cryptography's wheels include a statically linked copy of OpenSSL. The versions of OpenSSL included in cryptography 0.8.1-39.0.0  are vulnerable to a security issue. More details about the vulnerabilities themselves can be found in https://www.openssl.org/news/secadv/20221213.txt and https://www.openssl.org/news/secadv/20230207.txt.\n\nIf you are building cryptography source (\"sdist\") then you are responsible for upgrading your copy of OpenSSL. Only users installing from wheels built by the cryptography project (i.e., those distributed on PyPI) need to update their cryptography versions.\n\n\n",
+                "markdown": "> pyca/cryptography's wheels include a statically linked copy of OpenSSL. The versions of OpenSSL included in cryptography 0.8.1-39.0.0  are vulnerable to a security issue. More details about the vulnerabilities themselves can be found in https://www.openssl.org/news/secadv/20221213.txt and https://www.openssl.org/news/secadv/20230207.txt.\n\nIf you are building cryptography source (\"sdist\") then you are responsible for upgrading your copy of OpenSSL. Only users installing from wheels built by the cryptography project (i.e., those distributed on PyPI) need to update their cryptography versions.\n\n\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:pypi/cryptography@37.0.2                 |\n| Affected range | >=0.8.1,<39.0.1                              |\n| Fixed version  | 39.0.1                                       |\n| CVSS Score     |                                          7.4 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H |\n"
+              },
+              "properties": {
+                "affected_version": ">=0.8.1,<39.0.1",
+                "cvssV3": 7.4,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+                "fixed_version": "39.0.1",
+                "purls": [
+                  "pkg:pypi/cryptography@37.0.2"
+                ],
+                "security-severity": "7.4",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-43804",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-43804: Exposure of Sensitive Information to an Unauthorized Actor"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-43804?s=github&n=urllib3&t=pypi&vr=%3C1.26.17",
+              "help": {
+                "text": "urllib3 doesn't treat the `Cookie` HTTP header special or provide any helpers for managing cookies over HTTP, that is the responsibility of the user. However, it is possible for a user to specify a `Cookie` header and unknowingly leak information via HTTP redirects to a different origin if that user doesn't disable redirects explicitly.\n\nUsers **must** handle redirects themselves instead of relying on urllib3's automatic redirects to achieve safe processing of the `Cookie` header, thus we decided to strip the header by default in order to further protect users who aren't using the correct approach.\n\n## Affected usages\n\nWe believe the number of usages affected by this advisory is low. It requires all of the following to be true to be exploited:\n\n* Using an affected version of urllib3 (patched in v1.26.17 and v2.0.6)\n* Using the `Cookie` header on requests, which is mostly typical for impersonating a browser.\n* Not disabling HTTP redirects\n* Either not using HTTPS or for the origin server to redirect to a malicious origin.\n\n## Remediation\n\n* Upgrading to at least urllib3 v1.26.17 or v2.0.6\n* Disabling HTTP redirects using `redirects=False` when sending requests.\n* Not using the `Cookie` header.\n",
+                "markdown": "> urllib3 doesn't treat the `Cookie` HTTP header special or provide any helpers for managing cookies over HTTP, that is the responsibility of the user. However, it is possible for a user to specify a `Cookie` header and unknowingly leak information via HTTP redirects to a different origin if that user doesn't disable redirects explicitly.\n\nUsers **must** handle redirects themselves instead of relying on urllib3's automatic redirects to achieve safe processing of the `Cookie` header, thus we decided to strip the header by default in order to further protect users who aren't using the correct approach.\n\n## Affected usages\n\nWe believe the number of usages affected by this advisory is low. It requires all of the following to be true to be exploited:\n\n* Using an affected version of urllib3 (patched in v1.26.17 and v2.0.6)\n* Using the `Cookie` header on requests, which is mostly typical for impersonating a browser.\n* Not disabling HTTP redirects\n* Either not using HTTPS or for the origin server to redirect to a malicious origin.\n\n## Remediation\n\n* Upgrading to at least urllib3 v1.26.17 or v2.0.6\n* Disabling HTTP redirects using `redirects=False` when sending requests.\n* Not using the `Cookie` header.\n\n|                |                                                                 |\n|----------------|-----------------------------------------------------------------|\n| Package        | pkg:pypi/urllib3@1.26.9                                         |\n| Affected range | <1.26.17                                                        |\n| Fixed version  | 1.26.17                                                         |\n| CVSS Score     |                                                             7.4 |\n| CVSS Vector    | CVSS:4.0/AV:N/AC:L/AT:P/PR:H/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N |\n"
+              },
+              "properties": {
+                "affected_version": "<1.26.17",
+                "cvssV3": 7.4,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:H/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+                "fixed_version": "1.26.17",
+                "purls": [
+                  "pkg:pypi/urllib3@1.26.9"
+                ],
+                "security-severity": "7.4",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-40898",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-40898: Inefficient Regular Expression Complexity"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2022-40898?s=github&n=wheel&t=pypi&vr=%3C0.38.1",
+              "help": {
+                "text": "Python Packaging Authority (PyPA) Wheel is a reference implementation of the Python wheel packaging standard. Wheel 0.37.1 and earlier are vulnerable to a Regular Expression denial of service via attacker controlled input to the wheel cli. The vulnerable regex is used to verify the validity of Wheel file names. This has been patched in version 0.38.1.\n",
+                "markdown": "> Python Packaging Authority (PyPA) Wheel is a reference implementation of the Python wheel packaging standard. Wheel 0.37.1 and earlier are vulnerable to a Regular Expression denial of service via attacker controlled input to the wheel cli. The vulnerable regex is used to verify the validity of Wheel file names. This has been patched in version 0.38.1.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:pypi/wheel@0.37.1                        |\n| Affected range | <0.38.1                                      |\n| Fixed version  | 0.38.1                                       |\n| CVSS Score     |                                          7.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H |\n"
+              },
+              "properties": {
+                "affected_version": "<0.38.1",
+                "cvssV3": 7.5,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "fixed_version": "0.38.1",
+                "purls": [
+                  "pkg:pypi/wheel@0.37.1"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-25577",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-25577: Uncontrolled Resource Consumption"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-25577?s=github&n=werkzeug&t=pypi&vr=%3C2.2.3",
+              "help": {
+                "text": "Werkzeug's multipart form data parser will parse an unlimited number of parts, including file parts. Parts can be a small amount of bytes, but each requires CPU time to parse and may use more memory as Python data. If a request can be made to an endpoint that accesses `request.data`, `request.form`, `request.files`, or `request.get_data(parse_form_data=False)`, it can cause unexpectedly high resource usage.\n\nThis allows an attacker to cause a denial of service by sending crafted multipart data to an endpoint that will parse it. The amount of CPU time required can block worker processes from handling legitimate requests. The amount of RAM required can trigger an out of memory kill of the process. Unlimited file parts can use up memory and file handles. If many concurrent requests are sent continuously, this can exhaust or kill all available workers.\n",
+                "markdown": "> Werkzeug's multipart form data parser will parse an unlimited number of parts, including file parts. Parts can be a small amount of bytes, but each requires CPU time to parse and may use more memory as Python data. If a request can be made to an endpoint that accesses `request.data`, `request.form`, `request.files`, or `request.get_data(parse_form_data=False)`, it can cause unexpectedly high resource usage.\n\nThis allows an attacker to cause a denial of service by sending crafted multipart data to an endpoint that will parse it. The amount of CPU time required can block worker processes from handling legitimate requests. The amount of RAM required can trigger an out of memory kill of the process. Unlimited file parts can use up memory and file handles. If many concurrent requests are sent continuously, this can exhaust or kill all available workers.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:pypi/werkzeug@2.1.2                      |\n| Affected range | <2.2.3                                       |\n| Fixed version  | 2.2.3                                        |\n| CVSS Score     |                                          7.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H |\n"
+              },
+              "properties": {
+                "affected_version": "<2.2.3",
+                "cvssV3": 7.5,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "fixed_version": "2.2.3",
+                "purls": [
+                  "pkg:pypi/werkzeug@2.1.2"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-37920",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-37920: Insufficient Verification of Data Authenticity"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-37920?s=github&n=certifi&t=pypi&vr=%3E%3D2015.4.28%2C%3C2023.7.22",
+              "help": {
+                "text": "Certifi 2023.07.22 removes root certificates from \"e-Tugra\" from the root store. These are in the process of being removed from Mozilla's trust store.\n\n e-Tugra's root certificates are being removed pursuant to an investigation prompted by reporting of security issues in their systems. Conclusions of Mozilla's investigation can be found [here](https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/C-HrP1SEq1A).\n",
+                "markdown": "> Certifi 2023.07.22 removes root certificates from \"e-Tugra\" from the root store. These are in the process of being removed from Mozilla's trust store.\n\n e-Tugra's root certificates are being removed pursuant to an investigation prompted by reporting of security issues in their systems. Conclusions of Mozilla's investigation can be found [here](https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/C-HrP1SEq1A).\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:pypi/certifi@2022.6.15                   |\n| Affected range | >=2015.4.28,<2023.7.22                       |\n| Fixed version  | 2023.7.22                                    |\n| CVSS Score     |                                          7.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N |\n"
+              },
+              "properties": {
+                "affected_version": ">=2015.4.28,<2023.7.22",
+                "cvssV3": 7.5,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+                "fixed_version": "2023.7.22",
+                "purls": [
+                  "pkg:pypi/certifi@2022.6.15"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2024-34069",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2024-34069: Cross-Site Request Forgery (CSRF)"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2024-34069?s=github&n=werkzeug&t=pypi&vr=%3C3.0.3",
+              "help": {
+                "text": "The debugger in affected versions of Werkzeug can allow an attacker to execute code on a developer's machine under some circumstances. This requires the attacker to get the developer to interact with a domain and subdomain they control, and enter the debugger PIN, but if they are successful it allows access to the debugger even if it is only running on localhost. This also requires the attacker to guess a URL in the developer's application that will trigger the debugger.\n",
+                "markdown": "> The debugger in affected versions of Werkzeug can allow an attacker to execute code on a developer's machine under some circumstances. This requires the attacker to get the developer to interact with a domain and subdomain they control, and enter the debugger PIN, but if they are successful it allows access to the debugger even if it is only running on localhost. This also requires the attacker to guess a URL in the developer's application that will trigger the debugger.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:pypi/werkzeug@2.1.2                      |\n| Affected range | <3.0.3                                       |\n| Fixed version  | 3.0.3                                        |\n| CVSS Score     |                                          7.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H |\n"
+              },
+              "properties": {
+                "affected_version": "<3.0.3",
+                "cvssV3": 7.5,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                "fixed_version": "3.0.3",
+                "purls": [
+                  "pkg:pypi/werkzeug@2.1.2"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2024-4340",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2024-4340: Uncontrolled Recursion"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2024-4340?s=github&n=sqlparse&t=pypi&vr=%3C0.5.0",
+              "help": {
+                "text": "### Summary\nPassing a heavily nested list to sqlparse.parse() leads to a Denial of Service due to RecursionError.\n\n### Details + PoC\nRunning the following code will raise Maximum recursion limit exceeded exception:\n```py\nimport sqlparse\nsqlparse.parse('[' * 10000 + ']' * 10000)\n```\nWe expect a traceback of RecursionError:\n```py\nTraceback (most recent call last):\n  File \"trigger_sqlparse_nested_list.py\", line 3, in <module>\n    sqlparse.parse('[' * 10000 + ']' * 10000)\n  File \"/home/uriya/.local/lib/python3.10/site-packages/sqlparse/__init__.py\", line 30, in parse\n    return tuple(parsestream(sql, encoding))\n  File \"/home/uriya/.local/lib/python3.10/site-packages/sqlparse/engine/filter_stack.py\", line 36, in run\n    stmt = grouping.group(stmt)\n  File \"/home/uriya/.local/lib/python3.10/site-packages/sqlparse/engine/grouping.py\", line 428, in group\n    func(stmt)\n  File \"/home/uriya/.local/lib/python3.10/site-packages/sqlparse/engine/grouping.py\", line 53, in group_brackets\n    _group_matching(tlist, sql.SquareBrackets)\n  File \"/home/uriya/.local/lib/python3.10/site-packages/sqlparse/engine/grouping.py\", line 48, in _group_matching\n    tlist.group_tokens(cls, open_idx, close_idx)\n  File \"/home/uriya/.local/lib/python3.10/site-packages/sqlparse/sql.py\", line 328, in group_tokens\n    grp = grp_cls(subtokens)\n  File \"/home/uriya/.local/lib/python3.10/site-packages/sqlparse/sql.py\", line 161, in __init__\n    super().__init__(None, str(self))\n  File \"/home/uriya/.local/lib/python3.10/site-packages/sqlparse/sql.py\", line 165, in __str__\n    return ''.join(token.value for token in self.flatten())\n  File \"/home/uriya/.local/lib/python3.10/site-packages/sqlparse/sql.py\", line 165, in <genexpr>\n    return ''.join(token.value for token in self.flatten())\n  File \"/home/uriya/.local/lib/python3.10/site-packages/sqlparse/sql.py\", line 214, in flatten\n    yield from token.flatten()\n  File \"/home/uriya/.local/lib/python3.10/site-packages/sqlparse/sql.py\", line 214, in flatten\n    yield from token.flatten()\n  File \"/home/uriya/.local/lib/python3.10/site-packages/sqlparse/sql.py\", line 214, in flatten\n    yield from token.flatten()\n  [Previous line repeated 983 more times]\nRecursionError: maximum recursion depth exceeded\n```\n\n### Fix suggestion\nThe [flatten()](https://github.com/andialbrecht/sqlparse/blob/master/sqlparse/sql.py#L207) function of TokenList class should limit the recursion to a maximal depth:\n```py\nfrom sqlparse.exceptions import SQLParseError\n\nMAX_DEPTH = 100\n\n    def flatten(self, depth=1):\n        \"\"\"Generator yielding ungrouped tokens.\n\n        This method is recursively called for all child tokens.\n        \"\"\"\n    if depth >= MAX_DEPTH:\n        raise SQLParseError('Maximal depth reached')\n        for token in self.tokens:\n            if token.is_group:\n                yield from token.flatten(depth + 1)\n            else:\n                yield token\n```\n\n### Impact\nDenial of Service (the impact depends on the use).\nAnyone parsing a user input with sqlparse.parse() is affected.\n\n",
+                "markdown": "> ### Summary\nPassing a heavily nested list to sqlparse.parse() leads to a Denial of Service due to RecursionError.\n\n### Details + PoC\nRunning the following code will raise Maximum recursion limit exceeded exception:\n```py\nimport sqlparse\nsqlparse.parse('[' * 10000 + ']' * 10000)\n```\nWe expect a traceback of RecursionError:\n```py\nTraceback (most recent call last):\n  File \"trigger_sqlparse_nested_list.py\", line 3, in <module>\n    sqlparse.parse('[' * 10000 + ']' * 10000)\n  File \"/home/uriya/.local/lib/python3.10/site-packages/sqlparse/__init__.py\", line 30, in parse\n    return tuple(parsestream(sql, encoding))\n  File \"/home/uriya/.local/lib/python3.10/site-packages/sqlparse/engine/filter_stack.py\", line 36, in run\n    stmt = grouping.group(stmt)\n  File \"/home/uriya/.local/lib/python3.10/site-packages/sqlparse/engine/grouping.py\", line 428, in group\n    func(stmt)\n  File \"/home/uriya/.local/lib/python3.10/site-packages/sqlparse/engine/grouping.py\", line 53, in group_brackets\n    _group_matching(tlist, sql.SquareBrackets)\n  File \"/home/uriya/.local/lib/python3.10/site-packages/sqlparse/engine/grouping.py\", line 48, in _group_matching\n    tlist.group_tokens(cls, open_idx, close_idx)\n  File \"/home/uriya/.local/lib/python3.10/site-packages/sqlparse/sql.py\", line 328, in group_tokens\n    grp = grp_cls(subtokens)\n  File \"/home/uriya/.local/lib/python3.10/site-packages/sqlparse/sql.py\", line 161, in __init__\n    super().__init__(None, str(self))\n  File \"/home/uriya/.local/lib/python3.10/site-packages/sqlparse/sql.py\", line 165, in __str__\n    return ''.join(token.value for token in self.flatten())\n  File \"/home/uriya/.local/lib/python3.10/site-packages/sqlparse/sql.py\", line 165, in <genexpr>\n    return ''.join(token.value for token in self.flatten())\n  File \"/home/uriya/.local/lib/python3.10/site-packages/sqlparse/sql.py\", line 214, in flatten\n    yield from token.flatten()\n  File \"/home/uriya/.local/lib/python3.10/site-packages/sqlparse/sql.py\", line 214, in flatten\n    yield from token.flatten()\n  File \"/home/uriya/.local/lib/python3.10/site-packages/sqlparse/sql.py\", line 214, in flatten\n    yield from token.flatten()\n  [Previous line repeated 983 more times]\nRecursionError: maximum recursion depth exceeded\n```\n\n### Fix suggestion\nThe [flatten()](https://github.com/andialbrecht/sqlparse/blob/master/sqlparse/sql.py#L207) function of TokenList class should limit the recursion to a maximal depth:\n```py\nfrom sqlparse.exceptions import SQLParseError\n\nMAX_DEPTH = 100\n\n    def flatten(self, depth=1):\n        \"\"\"Generator yielding ungrouped tokens.\n\n        This method is recursively called for all child tokens.\n        \"\"\"\n    if depth >= MAX_DEPTH:\n        raise SQLParseError('Maximal depth reached')\n        for token in self.tokens:\n            if token.is_group:\n                yield from token.flatten(depth + 1)\n            else:\n                yield token\n```\n\n### Impact\nDenial of Service (the impact depends on the use).\nAnyone parsing a user input with sqlparse.parse() is affected.\n\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:pypi/sqlparse@0.3.1                      |\n| Affected range | <0.5.0                                       |\n| Fixed version  | 0.5.0                                        |\n| CVSS Score     |                                          7.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H |\n"
+              },
+              "properties": {
+                "affected_version": "<0.5.0",
+                "cvssV3": 7.5,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "fixed_version": "0.5.0",
+                "purls": [
+                  "pkg:pypi/sqlparse@0.3.1"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2024-6345",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2024-6345: Improper Control of Generation of Code ('Code Injection')"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2024-6345?s=github&n=setuptools&t=pypi&vr=%3C70.0.0",
+              "help": {
+                "text": "A vulnerability in the `package_index` module of pypa/setuptools versions up to 69.1.1 allows for remote code execution via its download functions. These functions, which are used to download packages from URLs provided by users or retrieved from package index servers, are susceptible to code injection. If these functions are exposed to user-controlled inputs, such as package URLs, they can execute arbitrary commands on the system. The issue is fixed in version 70.0.\n",
+                "markdown": "> A vulnerability in the `package_index` module of pypa/setuptools versions up to 69.1.1 allows for remote code execution via its download functions. These functions, which are used to download packages from URLs provided by users or retrieved from package index servers, are susceptible to code injection. If these functions are exposed to user-controlled inputs, such as package URLs, they can execute arbitrary commands on the system. The issue is fixed in version 70.0.\n\n|                |                                                                 |\n|----------------|-----------------------------------------------------------------|\n| Package        | pkg:pypi/setuptools@58.1.0                                      |\n| Affected range | <70.0.0                                                         |\n| Fixed version  | 70.0.0                                                          |\n| CVSS Score     |                                                             7.5 |\n| CVSS Vector    | CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N |\n"
+              },
+              "properties": {
+                "affected_version": "<70.0.0",
+                "cvssV3": 7.5,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+                "fixed_version": "70.0.0",
+                "purls": [
+                  "pkg:pypi/setuptools@58.1.0"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "GHSA-2m57-hf25-phgg",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "GHSA-2m57-hf25-phgg: OWASP Top Ten 2017 Category A9 - Using Components with Known Vulnerabilities"
+              },
+              "helpUri": "https://scout.docker.com/v/GHSA-2m57-hf25-phgg?s=gitlab&n=sqlparse&t=pypi&vr=%3C0.5.0",
+              "help": {
+                "text": "Passing a heavily nested list to sqlparse.parse() leads to a Denial of Service due to RecursionError.\n",
+                "markdown": "> Passing a heavily nested list to sqlparse.parse() leads to a Denial of Service due to RecursionError.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:pypi/sqlparse@0.3.1                      |\n| Affected range | <0.5.0                                       |\n| Fixed version  | 0.5.0                                        |\n| CVSS Score     |                                          7.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H |\n"
+              },
+              "properties": {
+                "affected_version": "<0.5.0",
+                "cvssV3": 7.5,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "fixed_version": "0.5.0",
+                "purls": [
+                  "pkg:pypi/sqlparse@0.3.1"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "GHSA-62qf-jcq8-8gxw",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "GHSA-62qf-jcq8-8gxw: OWASP Top Ten 2017 Category A9 - Using Components with Known Vulnerabilities"
+              },
+              "helpUri": "https://scout.docker.com/v/GHSA-62qf-jcq8-8gxw?s=gitlab&n=sqlparse&t=pypi&vr=%3C0.5.0",
+              "help": {
+                "text": "## Duplicate Advisory\nThis advisory has been withdrawn because it is a duplicate of GHSA-2m57-hf25-phgg. This link is maintained to preserve external references.\n\n## Original Description\nPassing a heavily nested list to sqlparse.parse() leads to a Denial of Service due to RecursionError.\n",
+                "markdown": "> ## Duplicate Advisory\nThis advisory has been withdrawn because it is a duplicate of GHSA-2m57-hf25-phgg. This link is maintained to preserve external references.\n\n## Original Description\nPassing a heavily nested list to sqlparse.parse() leads to a Denial of Service due to RecursionError.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:pypi/sqlparse@0.3.1                      |\n| Affected range | <0.5.0                                       |\n| Fixed version  | 0.5.0                                        |\n| CVSS Score     |                                          7.5 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H |\n"
+              },
+              "properties": {
+                "affected_version": "<0.5.0",
+                "cvssV3": 7.5,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "fixed_version": "0.5.0",
+                "purls": [
+                  "pkg:pypi/sqlparse@0.3.1"
+                ],
+                "security-severity": "7.5",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2024-1135",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2024-1135: Inconsistent Interpretation of HTTP Requests ('HTTP Request/Response Smuggling')"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2024-1135?s=github&n=gunicorn&t=pypi&vr=%3C22.0.0",
+              "help": {
+                "text": "Gunicorn fails to properly validate Transfer-Encoding headers, leading to HTTP Request Smuggling (HRS) vulnerabilities. By crafting requests with conflicting Transfer-Encoding headers, attackers can bypass security restrictions and access restricted endpoints. This issue is due to Gunicorn's handling of Transfer-Encoding headers, where it incorrectly processes requests with multiple, conflicting Transfer-Encoding headers, treating them as chunked regardless of the final encoding specified. This vulnerability has been shown to allow access to endpoints restricted by gunicorn. This issue has been addressed in version 22.0.0.\n\nTo be affected users must have a network path which does not filter out invalid requests. These users are advised to block access to restricted endpoints via a firewall or other mechanism if they are unable to update.\n",
+                "markdown": "> Gunicorn fails to properly validate Transfer-Encoding headers, leading to HTTP Request Smuggling (HRS) vulnerabilities. By crafting requests with conflicting Transfer-Encoding headers, attackers can bypass security restrictions and access restricted endpoints. This issue is due to Gunicorn's handling of Transfer-Encoding headers, where it incorrectly processes requests with multiple, conflicting Transfer-Encoding headers, treating them as chunked regardless of the final encoding specified. This vulnerability has been shown to allow access to endpoints restricted by gunicorn. This issue has been addressed in version 22.0.0.\n\nTo be affected users must have a network path which does not filter out invalid requests. These users are advised to block access to restricted endpoints via a firewall or other mechanism if they are unable to update.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:pypi/gunicorn@20.1.0                     |\n| Affected range | <22.0.0                                      |\n| Fixed version  | 22.0.0                                       |\n| CVSS Score     |                                          8.2 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:N |\n"
+              },
+              "properties": {
+                "affected_version": "<22.0.0",
+                "cvssV3": 8.2,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:N",
+                "fixed_version": "22.0.0",
+                "purls": [
+                  "pkg:pypi/gunicorn@20.1.0"
+                ],
+                "security-severity": "8.2",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2020-35653",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2020-35653: Out-of-bounds Read"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2020-35653?s=github&n=pillow&t=pypi&vr=%3C8.1.0",
+              "help": {
+                "text": "In Pillow before 8.1.0, PcxDecode has a buffer over-read when decoding a crafted PCX file because the user-supplied stride value is trusted for buffer calculations.\n",
+                "markdown": "> In Pillow before 8.1.0, PcxDecode has a buffer over-read when decoding a crafted PCX file because the user-supplied stride value is trusted for buffer calculations.\n\n|                |                                                                 |\n|----------------|-----------------------------------------------------------------|\n| Package        | pkg:pypi/pillow@8.0.0                                           |\n| Affected range | <8.1.0                                                          |\n| Fixed version  | 8.1.0                                                           |\n| CVSS Score     |                                                             8.3 |\n| CVSS Vector    | CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:N/VA:H/SC:N/SI:N/SA:N |\n"
+              },
+              "properties": {
+                "affected_version": "<8.1.0",
+                "cvssV3": 8.3,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:N/VA:H/SC:N/SI:N/SA:N",
+                "fixed_version": "8.1.0",
+                "purls": [
+                  "pkg:pypi/pillow@8.0.0"
+                ],
+                "security-severity": "8.3",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2020-35654",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2020-35654: Out-of-bounds Write"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2020-35654?s=github&n=pillow&t=pypi&vr=%3C8.1.0",
+              "help": {
+                "text": "In Pillow before 8.1.0, TiffDecode has a heap-based buffer overflow when decoding crafted YCbCr files because of certain interpretation conflicts with LibTIFF in RGBA mode.\n",
+                "markdown": "> In Pillow before 8.1.0, TiffDecode has a heap-based buffer overflow when decoding crafted YCbCr files because of certain interpretation conflicts with LibTIFF in RGBA mode.\n\n|                |                                                                 |\n|----------------|-----------------------------------------------------------------|\n| Package        | pkg:pypi/pillow@8.0.0                                           |\n| Affected range | <8.1.0                                                          |\n| Fixed version  | 8.1.0                                                           |\n| CVSS Score     |                                                             8.6 |\n| CVSS Vector    | CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N |\n"
+              },
+              "properties": {
+                "affected_version": "<8.1.0",
+                "cvssV3": 8.6,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+                "fixed_version": "8.1.0",
+                "purls": [
+                  "pkg:pypi/pillow@8.0.0"
+                ],
+                "security-severity": "8.6",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-23437",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2021-23437: Out-of-bounds Read"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2021-23437?s=github&n=pillow&t=pypi&vr=%3E%3D5.2.0%2C%3C8.3.2",
+              "help": {
+                "text": "The package pillow 5.2.0 and before 8.3.2 are vulnerable to Regular Expression Denial of Service (ReDoS) via the getrgb function.\n",
+                "markdown": "> The package pillow 5.2.0 and before 8.3.2 are vulnerable to Regular Expression Denial of Service (ReDoS) via the getrgb function.\n\n|                |                                                                 |\n|----------------|-----------------------------------------------------------------|\n| Package        | pkg:pypi/pillow@8.0.0                                           |\n| Affected range | >=5.2.0,<8.3.2                                                  |\n| Fixed version  | 8.3.2                                                           |\n| CVSS Score     |                                                             8.7 |\n| CVSS Vector    | CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N |\n"
+              },
+              "properties": {
+                "affected_version": ">=5.2.0,<8.3.2",
+                "cvssV3": 8.7,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+                "fixed_version": "8.3.2",
+                "purls": [
+                  "pkg:pypi/pillow@8.0.0"
+                ],
+                "security-severity": "8.7",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-25290",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2021-25290: Out-of-bounds Write"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2021-25290?s=github&n=pillow&t=pypi&vr=%3C8.1.1",
+              "help": {
+                "text": "An issue was discovered in Pillow before 8.1.1. In TiffDecode.c, there is a negative-offset memcpy with an invalid size.\n",
+                "markdown": "> An issue was discovered in Pillow before 8.1.1. In TiffDecode.c, there is a negative-offset memcpy with an invalid size.\n\n|                |                                                                 |\n|----------------|-----------------------------------------------------------------|\n| Package        | pkg:pypi/pillow@8.0.0                                           |\n| Affected range | <8.1.1                                                          |\n| Fixed version  | 8.1.1                                                           |\n| CVSS Score     |                                                             8.7 |\n| CVSS Vector    | CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N |\n"
+              },
+              "properties": {
+                "affected_version": "<8.1.1",
+                "cvssV3": 8.7,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+                "fixed_version": "8.1.1",
+                "purls": [
+                  "pkg:pypi/pillow@8.0.0"
+                ],
+                "security-severity": "8.7",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-25291",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2021-25291: Out-of-bounds Read"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2021-25291?s=github&n=pillow&t=pypi&vr=%3C8.2.0",
+              "help": {
+                "text": "An issue was discovered in Pillow before 8.2.0. In `TiffDecode.c`, there is an out-of-bounds read in `TiffreadRGBATile` via invalid tile boundaries.\n",
+                "markdown": "> An issue was discovered in Pillow before 8.2.0. In `TiffDecode.c`, there is an out-of-bounds read in `TiffreadRGBATile` via invalid tile boundaries.\n\n|                |                                                                 |\n|----------------|-----------------------------------------------------------------|\n| Package        | pkg:pypi/pillow@8.0.0                                           |\n| Affected range | <8.2.0                                                          |\n| Fixed version  | 8.2.0                                                           |\n| CVSS Score     |                                                             8.7 |\n| CVSS Vector    | CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N |\n"
+              },
+              "properties": {
+                "affected_version": "<8.2.0",
+                "cvssV3": 8.7,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+                "fixed_version": "8.2.0",
+                "purls": [
+                  "pkg:pypi/pillow@8.0.0"
+                ],
+                "security-severity": "8.7",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-25293",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2021-25293: Out-of-bounds Read"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2021-25293?s=github&n=pillow&t=pypi&vr=%3E%3D4.3.0%2C%3C8.1.1",
+              "help": {
+                "text": "An issue was discovered in Pillow before 8.1.1. There is an out-of-bounds read in SGIRleDecode.c.\n",
+                "markdown": "> An issue was discovered in Pillow before 8.1.1. There is an out-of-bounds read in SGIRleDecode.c.\n\n|                |                                                                 |\n|----------------|-----------------------------------------------------------------|\n| Package        | pkg:pypi/pillow@8.0.0                                           |\n| Affected range | >=4.3.0,<8.1.1                                                  |\n| Fixed version  | 8.1.1                                                           |\n| CVSS Score     |                                                             8.7 |\n| CVSS Vector    | CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N |\n"
+              },
+              "properties": {
+                "affected_version": ">=4.3.0,<8.1.1",
+                "cvssV3": 8.7,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+                "fixed_version": "8.1.1",
+                "purls": [
+                  "pkg:pypi/pillow@8.0.0"
+                ],
+                "security-severity": "8.7",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-27921",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2021-27921: Uncontrolled Resource Consumption"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2021-27921?s=github&n=pillow&t=pypi&vr=%3C8.1.1",
+              "help": {
+                "text": "Pillow before 8.1.1 allows attackers to cause a denial of service (memory consumption) because the reported size of a contained image is not properly checked for a BLP container, and thus an attempted memory allocation can be very large.\n",
+                "markdown": "> Pillow before 8.1.1 allows attackers to cause a denial of service (memory consumption) because the reported size of a contained image is not properly checked for a BLP container, and thus an attempted memory allocation can be very large.\n\n|                |                                                                 |\n|----------------|-----------------------------------------------------------------|\n| Package        | pkg:pypi/pillow@8.0.0                                           |\n| Affected range | <8.1.1                                                          |\n| Fixed version  | 8.1.1                                                           |\n| CVSS Score     |                                                             8.7 |\n| CVSS Vector    | CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N |\n"
+              },
+              "properties": {
+                "affected_version": "<8.1.1",
+                "cvssV3": 8.7,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+                "fixed_version": "8.1.1",
+                "purls": [
+                  "pkg:pypi/pillow@8.0.0"
+                ],
+                "security-severity": "8.7",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-27922",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2021-27922: Uncontrolled Resource Consumption"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2021-27922?s=github&n=pillow&t=pypi&vr=%3C8.1.1",
+              "help": {
+                "text": "Pillow before 8.1.1 allows attackers to cause a denial of service (memory consumption) because the reported size of a contained image is not properly checked for an ICNS container, and thus an attempted memory allocation can be very large.\n",
+                "markdown": "> Pillow before 8.1.1 allows attackers to cause a denial of service (memory consumption) because the reported size of a contained image is not properly checked for an ICNS container, and thus an attempted memory allocation can be very large.\n\n|                |                                                                 |\n|----------------|-----------------------------------------------------------------|\n| Package        | pkg:pypi/pillow@8.0.0                                           |\n| Affected range | <8.1.1                                                          |\n| Fixed version  | 8.1.1                                                           |\n| CVSS Score     |                                                             8.7 |\n| CVSS Vector    | CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N |\n"
+              },
+              "properties": {
+                "affected_version": "<8.1.1",
+                "cvssV3": 8.7,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+                "fixed_version": "8.1.1",
+                "purls": [
+                  "pkg:pypi/pillow@8.0.0"
+                ],
+                "security-severity": "8.7",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-27923",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2021-27923: Uncontrolled Resource Consumption"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2021-27923?s=github&n=pillow&t=pypi&vr=%3C8.1.1",
+              "help": {
+                "text": "Pillow before 8.1.1 allows attackers to cause a denial of service (memory consumption) because the reported size of a contained image is not properly checked for an ICO container, and thus an attempted memory allocation can be very large.\n",
+                "markdown": "> Pillow before 8.1.1 allows attackers to cause a denial of service (memory consumption) because the reported size of a contained image is not properly checked for an ICO container, and thus an attempted memory allocation can be very large.\n\n|                |                                                                 |\n|----------------|-----------------------------------------------------------------|\n| Package        | pkg:pypi/pillow@8.0.0                                           |\n| Affected range | <8.1.1                                                          |\n| Fixed version  | 8.1.1                                                           |\n| CVSS Score     |                                                             8.7 |\n| CVSS Vector    | CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N |\n"
+              },
+              "properties": {
+                "affected_version": "<8.1.1",
+                "cvssV3": 8.7,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+                "fixed_version": "8.1.1",
+                "purls": [
+                  "pkg:pypi/pillow@8.0.0"
+                ],
+                "security-severity": "8.7",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-28676",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2021-28676: Loop with Unreachable Exit Condition ('Infinite Loop')"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2021-28676?s=github&n=pillow&t=pypi&vr=%3C8.2.0",
+              "help": {
+                "text": "An issue was discovered in Pillow before 8.2.0. For FLI data, FliDecode did not properly check that the block advance was non-zero, potentially leading to an infinite loop on load.\n",
+                "markdown": "> An issue was discovered in Pillow before 8.2.0. For FLI data, FliDecode did not properly check that the block advance was non-zero, potentially leading to an infinite loop on load.\n\n|                |                                                                 |\n|----------------|-----------------------------------------------------------------|\n| Package        | pkg:pypi/pillow@8.0.0                                           |\n| Affected range | <8.2.0                                                          |\n| Fixed version  | 8.2.0                                                           |\n| CVSS Score     |                                                             8.7 |\n| CVSS Vector    | CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N |\n"
+              },
+              "properties": {
+                "affected_version": "<8.2.0",
+                "cvssV3": 8.7,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+                "fixed_version": "8.2.0",
+                "purls": [
+                  "pkg:pypi/pillow@8.0.0"
+                ],
+                "security-severity": "8.7",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-28677",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2021-28677: Uncontrolled Resource Consumption"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2021-28677?s=github&n=pillow&t=pypi&vr=%3C8.2.0",
+              "help": {
+                "text": "An issue was discovered in Pillow before 8.2.0. For EPS data, the readline implementation used in EPSImageFile has to deal with any combination of \\r and \\n as line endings. It used an accidentally quadratic method of accumulating lines while looking for a line ending. A malicious EPS file could use this to perform a DoS of Pillow in the open phase, before an image was accepted for opening.\n",
+                "markdown": "> An issue was discovered in Pillow before 8.2.0. For EPS data, the readline implementation used in EPSImageFile has to deal with any combination of \\r and \\n as line endings. It used an accidentally quadratic method of accumulating lines while looking for a line ending. A malicious EPS file could use this to perform a DoS of Pillow in the open phase, before an image was accepted for opening.\n\n|                |                                                                 |\n|----------------|-----------------------------------------------------------------|\n| Package        | pkg:pypi/pillow@8.0.0                                           |\n| Affected range | <8.2.0                                                          |\n| Fixed version  | 8.2.0                                                           |\n| CVSS Score     |                                                             8.7 |\n| CVSS Vector    | CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N |\n"
+              },
+              "properties": {
+                "affected_version": "<8.2.0",
+                "cvssV3": 8.7,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+                "fixed_version": "8.2.0",
+                "purls": [
+                  "pkg:pypi/pillow@8.0.0"
+                ],
+                "security-severity": "8.7",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-40897",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-40897: Inefficient Regular Expression Complexity"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2022-40897?s=github&n=setuptools&t=pypi&vr=%3C65.5.1",
+              "help": {
+                "text": "Python Packaging Authority (PyPA)'s setuptools is a library designed to facilitate packaging Python projects. Setuptools version 65.5.0 and earlier could allow remote attackers to cause a denial of service by fetching malicious HTML from a PyPI package or custom PackageIndex page due to a vulnerable Regular Expression in `package_index`. This has been patched in version 65.5.1.\n",
+                "markdown": "> Python Packaging Authority (PyPA)'s setuptools is a library designed to facilitate packaging Python projects. Setuptools version 65.5.0 and earlier could allow remote attackers to cause a denial of service by fetching malicious HTML from a PyPI package or custom PackageIndex page due to a vulnerable Regular Expression in `package_index`. This has been patched in version 65.5.1.\n\n|                |                                                                 |\n|----------------|-----------------------------------------------------------------|\n| Package        | pkg:pypi/setuptools@58.1.0                                      |\n| Affected range | <65.5.1                                                         |\n| Fixed version  | 65.5.1                                                          |\n| CVSS Score     |                                                             8.7 |\n| CVSS Vector    | CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:L/SI:L/SA:N |\n"
+              },
+              "properties": {
+                "affected_version": "<65.5.1",
+                "cvssV3": 8.7,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:L/SI:L/SA:N",
+                "fixed_version": "65.5.1",
+                "purls": [
+                  "pkg:pypi/setuptools@58.1.0"
+                ],
+                "security-severity": "8.7",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-41323",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-41323: Inefficient Regular Expression Complexity"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2022-41323?s=github&n=django&t=pypi&vr=%3E%3D4.0%2C%3C4.0.8",
+              "help": {
+                "text": "In Django 3.2 before 3.2.16, 4.0 before 4.0.8, and 4.1 before 4.1.2, internationalized URLs were subject to a potential denial of service attack via the locale parameter, which is treated as a regular expression. \n",
+                "markdown": "> In Django 3.2 before 3.2.16, 4.0 before 4.0.8, and 4.1 before 4.1.2, internationalized URLs were subject to a potential denial of service attack via the locale parameter, which is treated as a regular expression. \n\n|                |                                                                 |\n|----------------|-----------------------------------------------------------------|\n| Package        | pkg:pypi/django@4.0.4                                           |\n| Affected range | >=4.0,<4.0.8                                                    |\n| Fixed version  | 4.0.8                                                           |\n| CVSS Score     |                                                             8.7 |\n| CVSS Vector    | CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N |\n"
+              },
+              "properties": {
+                "affected_version": ">=4.0,<4.0.8",
+                "cvssV3": 8.7,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+                "fixed_version": "4.0.8",
+                "purls": [
+                  "pkg:pypi/django@4.0.4"
+                ],
+                "security-severity": "8.7",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-45198",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-45198: Improper Handling of Highly Compressed Data (Data Amplification)"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2022-45198?s=github&n=pillow&t=pypi&vr=%3C9.2.0",
+              "help": {
+                "text": "Pillow before 9.2.0 performs Improper Handling of Highly Compressed GIF Data (Data Amplification).\n",
+                "markdown": "> Pillow before 9.2.0 performs Improper Handling of Highly Compressed GIF Data (Data Amplification).\n\n|                |                                                                 |\n|----------------|-----------------------------------------------------------------|\n| Package        | pkg:pypi/pillow@8.0.0                                           |\n| Affected range | <9.2.0                                                          |\n| Fixed version  | 9.2.0                                                           |\n| CVSS Score     |                                                             8.7 |\n| CVSS Vector    | CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N |\n"
+              },
+              "properties": {
+                "affected_version": "<9.2.0",
+                "cvssV3": 8.7,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+                "fixed_version": "9.2.0",
+                "purls": [
+                  "pkg:pypi/pillow@8.0.0"
+                ],
+                "security-severity": "8.7",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-23969",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-23969: Uncontrolled Resource Consumption"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-23969?s=github&n=django&t=pypi&vr=%3E%3D4.0a1%2C%3C4.0.9",
+              "help": {
+                "text": "In Django 3.2 before 3.2.17, 4.0 before 4.0.9, and 4.1 before 4.1.6, the parsed values of Accept-Language headers are cached in order to avoid repetitive parsing. This leads to a potential denial-of-service vector via excessive memory usage if the raw value of Accept-Language headers is very large.\n",
+                "markdown": "> In Django 3.2 before 3.2.17, 4.0 before 4.0.9, and 4.1 before 4.1.6, the parsed values of Accept-Language headers are cached in order to avoid repetitive parsing. This leads to a potential denial-of-service vector via excessive memory usage if the raw value of Accept-Language headers is very large.\n\n|                |                                                                 |\n|----------------|-----------------------------------------------------------------|\n| Package        | pkg:pypi/django@4.0.4                                           |\n| Affected range | >=4.0a1,<4.0.9                                                  |\n| Fixed version  | 4.0.9                                                           |\n| CVSS Score     |                                                             8.7 |\n| CVSS Vector    | CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N |\n"
+              },
+              "properties": {
+                "affected_version": ">=4.0a1,<4.0.9",
+                "cvssV3": 8.7,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+                "fixed_version": "4.0.9",
+                "purls": [
+                  "pkg:pypi/django@4.0.4"
+                ],
+                "security-severity": "8.7",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-24580",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-24580: Uncontrolled Resource Consumption"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-24580?s=github&n=django&t=pypi&vr=%3E%3D4.0a1%2C%3C4.0.10",
+              "help": {
+                "text": "An issue was discovered in the Multipart Request Parser in Django 3.2 before 3.2.18, 4.0 before 4.0.10, and 4.1 before 4.1.7. Passing certain inputs (e.g., an excessive number of parts) to multipart forms could result in too many open files or memory exhaustion, and provided a potential vector for a denial-of-service attack.\n",
+                "markdown": "> An issue was discovered in the Multipart Request Parser in Django 3.2 before 3.2.18, 4.0 before 4.0.10, and 4.1 before 4.1.7. Passing certain inputs (e.g., an excessive number of parts) to multipart forms could result in too many open files or memory exhaustion, and provided a potential vector for a denial-of-service attack.\n\n|                |                                                                 |\n|----------------|-----------------------------------------------------------------|\n| Package        | pkg:pypi/django@4.0.4                                           |\n| Affected range | >=4.0a1,<4.0.10                                                 |\n| Fixed version  | 4.0.10                                                          |\n| CVSS Score     |                                                             8.7 |\n| CVSS Vector    | CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N |\n"
+              },
+              "properties": {
+                "affected_version": ">=4.0a1,<4.0.10",
+                "cvssV3": 8.7,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+                "fixed_version": "4.0.10",
+                "purls": [
+                  "pkg:pypi/django@4.0.4"
+                ],
+                "security-severity": "8.7",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-30861",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-30861: Use of Persistent Cookies Containing Sensitive Information"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-30861?s=github&n=flask&t=pypi&vr=%3C2.2.5",
+              "help": {
+                "text": "When all of the following conditions are met, a response containing data intended for one client may be cached and subsequently sent by a proxy to other clients. If the proxy also caches `Set-Cookie` headers, it may send one client's `session` cookie to other clients. The severity depends on the application's use of the session, and the proxy's behavior regarding cookies. The risk depends on _all_ these conditions being met.\n\n1. The application must be hosted behind a caching proxy that does not strip cookies or ignore responses with cookies.\n2. The application sets [`session.permanent = True`](https://flask.palletsprojects.com/en/2.3.x/api/#flask.session.permanent).\n2. The application does not access or modify the session at any point during a request.\n4. [`SESSION_REFRESH_EACH_REQUEST`](https://flask.palletsprojects.com/en/2.3.x/config/#SESSION_REFRESH_EACH_REQUEST) is enabled (the default).\n5. The application does not set a `Cache-Control` header to indicate that a page is private or should not be cached.\n\nThis happens because vulnerable versions of Flask only set the `Vary: Cookie` header when the session is accessed or modified, not when it is refreshed (re-sent to update the expiration) without being accessed or modified.\n",
+                "markdown": "> When all of the following conditions are met, a response containing data intended for one client may be cached and subsequently sent by a proxy to other clients. If the proxy also caches `Set-Cookie` headers, it may send one client's `session` cookie to other clients. The severity depends on the application's use of the session, and the proxy's behavior regarding cookies. The risk depends on _all_ these conditions being met.\n\n1. The application must be hosted behind a caching proxy that does not strip cookies or ignore responses with cookies.\n2. The application sets [`session.permanent = True`](https://flask.palletsprojects.com/en/2.3.x/api/#flask.session.permanent).\n2. The application does not access or modify the session at any point during a request.\n4. [`SESSION_REFRESH_EACH_REQUEST`](https://flask.palletsprojects.com/en/2.3.x/config/#SESSION_REFRESH_EACH_REQUEST) is enabled (the default).\n5. The application does not set a `Cache-Control` header to indicate that a page is private or should not be cached.\n\nThis happens because vulnerable versions of Flask only set the `Vary: Cookie` header when the session is accessed or modified, not when it is refreshed (re-sent to update the expiration) without being accessed or modified.\n\n|                |                                                                 |\n|----------------|-----------------------------------------------------------------|\n| Package        | pkg:pypi/flask@2.1.2                                            |\n| Affected range | <2.2.5                                                          |\n| Fixed version  | 2.2.5                                                           |\n| CVSS Score     |                                                             8.7 |\n| CVSS Vector    | CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N |\n"
+              },
+              "properties": {
+                "affected_version": "<2.2.5",
+                "cvssV3": 8.7,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
+                "fixed_version": "2.2.5",
+                "purls": [
+                  "pkg:pypi/flask@2.1.2"
+                ],
+                "security-severity": "8.7",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-36053",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-36053: Inefficient Regular Expression Complexity"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-36053?s=github&n=django&t=pypi&vr=%3E%3D4.0a1%2C%3C4.1.10",
+              "help": {
+                "text": "In Django 3.2 before 3.2.20, 4 before 4.1.10, and 4.2 before 4.2.3, `EmailValidator` and `URLValidator` are subject to a potential ReDoS (regular expression denial of service) attack via a very large number of domain name labels of emails and URLs.\n",
+                "markdown": "> In Django 3.2 before 3.2.20, 4 before 4.1.10, and 4.2 before 4.2.3, `EmailValidator` and `URLValidator` are subject to a potential ReDoS (regular expression denial of service) attack via a very large number of domain name labels of emails and URLs.\n\n|                |                                                                 |\n|----------------|-----------------------------------------------------------------|\n| Package        | pkg:pypi/django@4.0.4                                           |\n| Affected range | >=4.0a1,<4.1.10                                                 |\n| Fixed version  | 4.1.10                                                          |\n| CVSS Score     |                                                             8.7 |\n| CVSS Vector    | CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N |\n"
+              },
+              "properties": {
+                "affected_version": ">=4.0a1,<4.1.10",
+                "cvssV3": 8.7,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+                "fixed_version": "4.1.10",
+                "purls": [
+                  "pkg:pypi/django@4.0.4"
+                ],
+                "security-severity": "8.7",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-44271",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-44271: Uncontrolled Resource Consumption"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-44271?s=github&n=pillow&t=pypi&vr=%3C10.0.0",
+              "help": {
+                "text": "An issue was discovered in Pillow before 10.0.0. It is a Denial of Service that uncontrollably allocates memory to process a given task, potentially causing a service to crash by having it run out of memory. This occurs for truetype in ImageFont when textlength in an ImageDraw instance operates on a long text argument.\n",
+                "markdown": "> An issue was discovered in Pillow before 10.0.0. It is a Denial of Service that uncontrollably allocates memory to process a given task, potentially causing a service to crash by having it run out of memory. This occurs for truetype in ImageFont when textlength in an ImageDraw instance operates on a long text argument.\n\n|                |                                                                 |\n|----------------|-----------------------------------------------------------------|\n| Package        | pkg:pypi/pillow@8.0.0                                           |\n| Affected range | <10.0.0                                                         |\n| Fixed version  | 10.0.0                                                          |\n| CVSS Score     |                                                             8.7 |\n| CVSS Vector    | CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N |\n"
+              },
+              "properties": {
+                "affected_version": "<10.0.0",
+                "cvssV3": 8.7,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+                "fixed_version": "10.0.0",
+                "purls": [
+                  "pkg:pypi/pillow@8.0.0"
+                ],
+                "security-severity": "8.7",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-50782",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-50782: Observable Discrepancy"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-50782?s=github&n=cryptography&t=pypi&vr=%3C42.0.0",
+              "help": {
+                "text": "A flaw was found in the python-cryptography package. This issue may allow a remote attacker to decrypt captured messages in TLS servers that use RSA key exchanges, which may lead to exposure of confidential or sensitive data.\n",
+                "markdown": "> A flaw was found in the python-cryptography package. This issue may allow a remote attacker to decrypt captured messages in TLS servers that use RSA key exchanges, which may lead to exposure of confidential or sensitive data.\n\n|                |                                                                 |\n|----------------|-----------------------------------------------------------------|\n| Package        | pkg:pypi/cryptography@37.0.2                                    |\n| Affected range | <42.0.0                                                         |\n| Fixed version  | 42.0.0                                                          |\n| CVSS Score     |                                                             8.7 |\n| CVSS Vector    | CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N |\n"
+              },
+              "properties": {
+                "affected_version": "<42.0.0",
+                "cvssV3": 8.7,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
+                "fixed_version": "42.0.0",
+                "purls": [
+                  "pkg:pypi/cryptography@37.0.2"
+                ],
+                "security-severity": "8.7",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-25287",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2021-25287: Out-of-bounds Read"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2021-25287?s=github&n=pillow&t=pypi&vr=%3E%3D2.4.0%2C%3C8.2.0",
+              "help": {
+                "text": "An issue was discovered in Pillow before 8.2.0. There is an out-of-bounds read in J2kDecode, in j2ku_graya_la.\n",
+                "markdown": "> An issue was discovered in Pillow before 8.2.0. There is an out-of-bounds read in J2kDecode, in j2ku_graya_la.\n\n|                |                                                                 |\n|----------------|-----------------------------------------------------------------|\n| Package        | pkg:pypi/pillow@8.0.0                                           |\n| Affected range | >=2.4.0,<8.2.0                                                  |\n| Fixed version  | 8.2.0                                                           |\n| CVSS Score     |                                                             8.8 |\n| CVSS Vector    | CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:H/SC:N/SI:N/SA:N |\n"
+              },
+              "properties": {
+                "affected_version": ">=2.4.0,<8.2.0",
+                "cvssV3": 8.8,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:H/SC:N/SI:N/SA:N",
+                "fixed_version": "8.2.0",
+                "purls": [
+                  "pkg:pypi/pillow@8.0.0"
+                ],
+                "security-severity": "8.8",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-25288",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2021-25288: Out-of-bounds Read"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2021-25288?s=github&n=pillow&t=pypi&vr=%3E%3D2.4.0%2C%3C8.2.0",
+              "help": {
+                "text": "An issue was discovered in Pillow before 8.2.0. There is an out-of-bounds read in J2kDecode, in j2ku_gray_i. This dates to Pillow 2.4.0.\n",
+                "markdown": "> An issue was discovered in Pillow before 8.2.0. There is an out-of-bounds read in J2kDecode, in j2ku_gray_i. This dates to Pillow 2.4.0.\n\n|                |                                                                 |\n|----------------|-----------------------------------------------------------------|\n| Package        | pkg:pypi/pillow@8.0.0                                           |\n| Affected range | >=2.4.0,<8.2.0                                                  |\n| Fixed version  | 8.2.0                                                           |\n| CVSS Score     |                                                             8.8 |\n| CVSS Vector    | CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:H/SC:N/SI:N/SA:N |\n"
+              },
+              "properties": {
+                "affected_version": ">=2.4.0,<8.2.0",
+                "cvssV3": 8.8,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:H/SC:N/SI:N/SA:N",
+                "fixed_version": "8.2.0",
+                "purls": [
+                  "pkg:pypi/pillow@8.0.0"
+                ],
+                "security-severity": "8.8",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-24303",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-24303: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2022-24303?s=github&n=pillow&t=pypi&vr=%3C9.0.1",
+              "help": {
+                "text": "Pillow before 9.0.1 allows attackers to delete files because spaces in temporary pathnames are mishandled.\n",
+                "markdown": "> Pillow before 9.0.1 allows attackers to delete files because spaces in temporary pathnames are mishandled.\n\n|                |                                                                 |\n|----------------|-----------------------------------------------------------------|\n| Package        | pkg:pypi/pillow@8.0.0                                           |\n| Affected range | <9.0.1                                                          |\n| Fixed version  | 9.0.1                                                           |\n| CVSS Score     |                                                             8.8 |\n| CVSS Vector    | CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:H/SC:N/SI:N/SA:N |\n"
+              },
+              "properties": {
+                "affected_version": "<9.0.1",
+                "cvssV3": 8.8,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:H/SC:N/SI:N/SA:N",
+                "fixed_version": "9.0.1",
+                "purls": [
+                  "pkg:pypi/pillow@8.0.0"
+                ],
+                "security-severity": "8.8",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-36359",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-36359: Download of Code Without Integrity Check"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2022-36359?s=github&n=django&t=pypi&vr=%3E%3D4.0%2C%3C4.0.7",
+              "help": {
+                "text": "An issue was discovered in the HTTP FileResponse class in Django 3.2 before 3.2.15 and 4.0 before 4.0.7. An application is vulnerable to a reflected file download (RFD) attack that sets the Content-Disposition header of a FileResponse when the filename is derived from user-supplied input.\n",
+                "markdown": "> An issue was discovered in the HTTP FileResponse class in Django 3.2 before 3.2.15 and 4.0 before 4.0.7. An application is vulnerable to a reflected file download (RFD) attack that sets the Content-Disposition header of a FileResponse when the filename is derived from user-supplied input.\n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:pypi/django@4.0.4                        |\n| Affected range | >=4.0,<4.0.7                                 |\n| Fixed version  | 4.0.7                                        |\n| CVSS Score     |                                          8.8 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H |\n"
+              },
+              "properties": {
+                "affected_version": ">=4.0,<4.0.7",
+                "cvssV3": 8.8,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                "fixed_version": "4.0.7",
+                "purls": [
+                  "pkg:pypi/django@4.0.4"
+                ],
+                "security-severity": "8.8",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-4863",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-4863: Out-of-bounds Write"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-4863?s=github&n=pillow&t=pypi&vr=%3C10.0.1",
+              "help": {
+                "text": "Heap buffer overflow in libwebp allow a remote attacker to perform an out of bounds memory write via a crafted HTML page. \n",
+                "markdown": "> Heap buffer overflow in libwebp allow a remote attacker to perform an out of bounds memory write via a crafted HTML page. \n\n|                |                                              |\n|----------------|----------------------------------------------|\n| Package        | pkg:pypi/pillow@8.0.0                        |\n| Affected range | <10.0.1                                      |\n| Fixed version  | 10.0.1                                       |\n| CVSS Score     |                                          8.8 |\n| CVSS Vector    | CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H |\n"
+              },
+              "properties": {
+                "affected_version": "<10.0.1",
+                "cvssV3": 8.8,
+                "cvssV3_severity": "HIGH",
+                "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                "fixed_version": "10.0.1",
+                "purls": [
+                  "pkg:pypi/pillow@8.0.0"
+                ],
+                "security-severity": "8.8",
+                "tags": [
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2019-20477",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2019-20477: Deserialization of Untrusted Data"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2019-20477?s=github&n=pyyaml&t=pypi&vr=%3E%3D5.1%2C%3C5.2",
+              "help": {
+                "text": "PyYAML 5.1 through 5.1.2 has insufficient restrictions on the load and load_all functions because of a class deserialization issue, e.g., Popen is a class in the subprocess module. NOTE: this issue exists because of an incomplete fix for CVE-2017-18342.\n",
+                "markdown": "> PyYAML 5.1 through 5.1.2 has insufficient restrictions on the load and load_all functions because of a class deserialization issue, e.g., Popen is a class in the subprocess module. NOTE: this issue exists because of an incomplete fix for CVE-2017-18342.\n\n|                |                                                                 |\n|----------------|-----------------------------------------------------------------|\n| Package        | pkg:pypi/pyyaml@5.1                                             |\n| Affected range | >=5.1,<5.2                                                      |\n| Fixed version  |                                                             5.2 |\n| CVSS Score     |                                                             9.3 |\n| CVSS Vector    | CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N |\n"
+              },
+              "properties": {
+                "affected_version": ">=5.1,<5.2",
+                "cvssV3": 9.3,
+                "cvssV3_severity": "CRITICAL",
+                "cvssV3_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+                "fixed_version": "5.2",
+                "purls": [
+                  "pkg:pypi/pyyaml@5.1"
+                ],
+                "security-severity": "9.3",
+                "tags": [
+                  "CRITICAL"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2020-14343",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2020-14343: Improper Input Validation"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2020-14343?s=github&n=pyyaml&t=pypi&vr=%3C5.4",
+              "help": {
+                "text": "A vulnerability was discovered in the PyYAML library in versions before 5.4, where it is susceptible to arbitrary code execution when it processes untrusted YAML files through the full_load method or with the FullLoader loader. Applications that use the library to process untrusted input may be vulnerable to this flaw. This flaw allows an attacker to execute arbitrary code on the system by abusing the python/object/new constructor. This flaw is due to an incomplete fix for CVE-2020-1747.\n",
+                "markdown": "> A vulnerability was discovered in the PyYAML library in versions before 5.4, where it is susceptible to arbitrary code execution when it processes untrusted YAML files through the full_load method or with the FullLoader loader. Applications that use the library to process untrusted input may be vulnerable to this flaw. This flaw allows an attacker to execute arbitrary code on the system by abusing the python/object/new constructor. This flaw is due to an incomplete fix for CVE-2020-1747.\n\n|                |                                                                 |\n|----------------|-----------------------------------------------------------------|\n| Package        | pkg:pypi/pyyaml@5.1                                             |\n| Affected range | <5.4                                                            |\n| Fixed version  |                                                             5.4 |\n| CVSS Score     |                                                             9.3 |\n| CVSS Vector    | CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N |\n"
+              },
+              "properties": {
+                "affected_version": "<5.4",
+                "cvssV3": 9.3,
+                "cvssV3_severity": "CRITICAL",
+                "cvssV3_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+                "fixed_version": "5.4",
+                "purls": [
+                  "pkg:pypi/pyyaml@5.1"
+                ],
+                "security-severity": "9.3",
+                "tags": [
+                  "CRITICAL"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2020-1747",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2020-1747: Improper Input Validation"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2020-1747?s=github&n=pyyaml&t=pypi&vr=%3E%3D5.1b7%2C%3C5.3.1",
+              "help": {
+                "text": "A vulnerability was discovered in the PyYAML library in versions before 5.3.1, where it is susceptible to arbitrary code execution when it processes untrusted YAML files through the full_load method or with the FullLoader loader. Applications that use the library to process untrusted input may be vulnerable to this flaw. An attacker could use this flaw to execute arbitrary code on the system by abusing the python/object/new constructor.\n",
+                "markdown": "> A vulnerability was discovered in the PyYAML library in versions before 5.3.1, where it is susceptible to arbitrary code execution when it processes untrusted YAML files through the full_load method or with the FullLoader loader. Applications that use the library to process untrusted input may be vulnerable to this flaw. An attacker could use this flaw to execute arbitrary code on the system by abusing the python/object/new constructor.\n\n|                |                                                                 |\n|----------------|-----------------------------------------------------------------|\n| Package        | pkg:pypi/pyyaml@5.1                                             |\n| Affected range | >=5.1b7,<5.3.1                                                  |\n| Fixed version  | 5.3.1                                                           |\n| CVSS Score     |                                                             9.3 |\n| CVSS Vector    | CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N |\n"
+              },
+              "properties": {
+                "affected_version": ">=5.1b7,<5.3.1",
+                "cvssV3": 9.3,
+                "cvssV3_severity": "CRITICAL",
+                "cvssV3_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+                "fixed_version": "5.3.1",
+                "purls": [
+                  "pkg:pypi/pyyaml@5.1"
+                ],
+                "security-severity": "9.3",
+                "tags": [
+                  "CRITICAL"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-25289",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2021-25289: Out-of-bounds Write"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2021-25289?s=github&n=pillow&t=pypi&vr=%3C8.1.1",
+              "help": {
+                "text": "An issue was discovered in Pillow before 8.1.1. TiffDecode has a heap-based buffer overflow when decoding crafted YCbCr files because of certain interpretation conflicts with LibTIFF in RGBA mode. NOTE: this issue exists because of an incomplete fix for CVE-2020-35654.\n",
+                "markdown": "> An issue was discovered in Pillow before 8.1.1. TiffDecode has a heap-based buffer overflow when decoding crafted YCbCr files because of certain interpretation conflicts with LibTIFF in RGBA mode. NOTE: this issue exists because of an incomplete fix for CVE-2020-35654.\n\n|                |                                                                 |\n|----------------|-----------------------------------------------------------------|\n| Package        | pkg:pypi/pillow@8.0.0                                           |\n| Affected range | <8.1.1                                                          |\n| Fixed version  | 8.1.1                                                           |\n| CVSS Score     |                                                             9.3 |\n| CVSS Vector    | CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N |\n"
+              },
+              "properties": {
+                "affected_version": "<8.1.1",
+                "cvssV3": 9.3,
+                "cvssV3_severity": "CRITICAL",
+                "cvssV3_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+                "fixed_version": "8.1.1",
+                "purls": [
+                  "pkg:pypi/pillow@8.0.0"
+                ],
+                "security-severity": "9.3",
+                "tags": [
+                  "CRITICAL"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-34552",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2021-34552: Buffer Copy without Checking Size of Input ('Classic Buffer Overflow')"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2021-34552?s=github&n=pillow&t=pypi&vr=%3C8.3.0",
+              "help": {
+                "text": "Pillow through 8.2.0 and PIL (aka Python Imaging Library) through 1.1.7 allow an attacker to pass controlled parameters directly into a convert function to trigger a buffer overflow in Convert.c.\n",
+                "markdown": "> Pillow through 8.2.0 and PIL (aka Python Imaging Library) through 1.1.7 allow an attacker to pass controlled parameters directly into a convert function to trigger a buffer overflow in Convert.c.\n\n|                |                                                                 |\n|----------------|-----------------------------------------------------------------|\n| Package        | pkg:pypi/pillow@8.0.0                                           |\n| Affected range | <8.3.0                                                          |\n| Fixed version  | 8.3.0                                                           |\n| CVSS Score     |                                                             9.3 |\n| CVSS Vector    | CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N |\n"
+              },
+              "properties": {
+                "affected_version": "<8.3.0",
+                "cvssV3": 9.3,
+                "cvssV3_severity": "CRITICAL",
+                "cvssV3_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+                "fixed_version": "8.3.0",
+                "purls": [
+                  "pkg:pypi/pillow@8.0.0"
+                ],
+                "security-severity": "9.3",
+                "tags": [
+                  "CRITICAL"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-22817",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-22817: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2022-22817?s=github&n=pillow&t=pypi&vr=%3C9.0.1",
+              "help": {
+                "text": "`PIL.ImageMath.eval` in Pillow before 9.0.0 allows evaluation of arbitrary expressions, such as ones that use the Python exec method `ImageMath.eval(\"exec(exit())\")`.\n\nWhile Pillow 9.0.0 restricted top-level builtins available to PIL.ImageMath.eval(), it did not prevent builtins available to lambda expressions. These are now also restricted in 9.0.1.\n",
+                "markdown": "> `PIL.ImageMath.eval` in Pillow before 9.0.0 allows evaluation of arbitrary expressions, such as ones that use the Python exec method `ImageMath.eval(\"exec(exit())\")`.\n\nWhile Pillow 9.0.0 restricted top-level builtins available to PIL.ImageMath.eval(), it did not prevent builtins available to lambda expressions. These are now also restricted in 9.0.1.\n\n|                |                                                                 |\n|----------------|-----------------------------------------------------------------|\n| Package        | pkg:pypi/pillow@8.0.0                                           |\n| Affected range | <9.0.1                                                          |\n| Fixed version  | 9.0.1                                                           |\n| CVSS Score     |                                                             9.3 |\n| CVSS Vector    | CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N |\n"
+              },
+              "properties": {
+                "affected_version": "<9.0.1",
+                "cvssV3": 9.3,
+                "cvssV3_severity": "CRITICAL",
+                "cvssV3_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+                "fixed_version": "9.0.1",
+                "purls": [
+                  "pkg:pypi/pillow@8.0.0"
+                ],
+                "security-severity": "9.3",
+                "tags": [
+                  "CRITICAL"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-34265",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2022-34265: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2022-34265?s=github&n=django&t=pypi&vr=%3E%3D4.0a1%2C%3C4.0.6",
+              "help": {
+                "text": "An issue was discovered in Django 3.2 before 3.2.14 and 4.0 before 4.0.6. The `Trunc()` and `Extract()` database functions are subject to SQL injection if untrusted data is used as a kind/lookup_name value. Applications that constrain the lookup name and kind choice to a known safe list are unaffected.\n",
+                "markdown": "> An issue was discovered in Django 3.2 before 3.2.14 and 4.0 before 4.0.6. The `Trunc()` and `Extract()` database functions are subject to SQL injection if untrusted data is used as a kind/lookup_name value. Applications that constrain the lookup name and kind choice to a known safe list are unaffected.\n\n|                |                                                                 |\n|----------------|-----------------------------------------------------------------|\n| Package        | pkg:pypi/django@4.0.4                                           |\n| Affected range | >=4.0a1,<4.0.6                                                  |\n| Fixed version  | 4.0.6                                                           |\n| CVSS Score     |                                                             9.3 |\n| CVSS Vector    | CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N |\n"
+              },
+              "properties": {
+                "affected_version": ">=4.0a1,<4.0.6",
+                "cvssV3": 9.3,
+                "cvssV3_severity": "CRITICAL",
+                "cvssV3_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+                "fixed_version": "4.0.6",
+                "purls": [
+                  "pkg:pypi/django@4.0.4"
+                ],
+                "security-severity": "9.3",
+                "tags": [
+                  "CRITICAL"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-31047",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-31047: Improper Input Validation"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-31047?s=github&n=django&t=pypi&vr=%3E%3D4.0a1%2C%3C4.1.9",
+              "help": {
+                "text": "In Django 3.2 before 3.2.19, 4.x before 4.1.9, and 4.2 before 4.2.1, it was possible to bypass validation when using one form field to upload multiple files. This multiple upload has never been supported by forms.FileField or forms.ImageField (only the last uploaded file was validated). However, Django's \"Uploading multiple files\" documentation suggested otherwise.\n",
+                "markdown": "> In Django 3.2 before 3.2.19, 4.x before 4.1.9, and 4.2 before 4.2.1, it was possible to bypass validation when using one form field to upload multiple files. This multiple upload has never been supported by forms.FileField or forms.ImageField (only the last uploaded file was validated). However, Django's \"Uploading multiple files\" documentation suggested otherwise.\n\n|                |                                                                 |\n|----------------|-----------------------------------------------------------------|\n| Package        | pkg:pypi/django@4.0.4                                           |\n| Affected range | >=4.0a1,<4.1.9                                                  |\n| Fixed version  | 4.1.9                                                           |\n| CVSS Score     |                                                             9.3 |\n| CVSS Vector    | CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N |\n"
+              },
+              "properties": {
+                "affected_version": ">=4.0a1,<4.1.9",
+                "cvssV3": 9.3,
+                "cvssV3_severity": "CRITICAL",
+                "cvssV3_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+                "fixed_version": "4.1.9",
+                "purls": [
+                  "pkg:pypi/django@4.0.4"
+                ],
+                "security-severity": "9.3",
+                "tags": [
+                  "CRITICAL"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-50447",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-50447: Improper Control of Generation of Code ('Code Injection')"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-50447?s=github&n=pillow&t=pypi&vr=%3C10.2.0",
+              "help": {
+                "text": "Pillow through 10.1.0 allows PIL.ImageMath.eval Arbitrary Code Execution via the environment parameter, a different vulnerability than CVE-2022-22817 (which was about the expression parameter).\n",
+                "markdown": "> Pillow through 10.1.0 allows PIL.ImageMath.eval Arbitrary Code Execution via the environment parameter, a different vulnerability than CVE-2022-22817 (which was about the expression parameter).\n\n|                |                                                                 |\n|----------------|-----------------------------------------------------------------|\n| Package        | pkg:pypi/pillow@8.0.0                                           |\n| Affected range | <10.2.0                                                         |\n| Fixed version  | 10.2.0                                                          |\n| CVSS Score     |                                                             9.3 |\n| CVSS Vector    | CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N |\n"
+              },
+              "properties": {
+                "affected_version": "<10.2.0",
+                "cvssV3": 9.3,
+                "cvssV3_severity": "CRITICAL",
+                "cvssV3_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+                "fixed_version": "10.2.0",
+                "purls": [
+                  "pkg:pypi/pillow@8.0.0"
+                ],
+                "security-severity": "9.3",
+                "tags": [
+                  "CRITICAL"
+                ]
+              }
+            }
+          ],
+          "version": "1.15.1"
+        }
+      },
+      "results": [
+        {
+          "ruleId": "GHSA-56pw-mpj4-fxww",
+          "ruleIndex": 0,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : GHSA-56pw-mpj4-fxww    \n  Severity       : HIGH                   \n  Package        : pkg:pypi/pillow@8.0.0  \n  Affected range : <10.0.1                \n  Fixed version  : 10.0.1                 \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-28675",
+          "ruleIndex": 1,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability   : CVE-2021-28675                                                   \n  Severity        : HIGH                                                             \n  Package         : pkg:pypi/pillow@8.0.0                                            \n  Affected range  : <8.2.0                                                           \n  Fixed version   : 8.2.0                                                            \n  CVSS Score      : 7.1                                                              \n  CVSS Vector     : CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N  \n  EPSS Score      : 0.000750                                                         \n  EPSS Percentile : 0.339450                                                         \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-28219",
+          "ruleIndex": 2,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability   : CVE-2024-28219                                                   \n  Severity        : HIGH                                                             \n  Package         : pkg:pypi/pillow@8.0.0                                            \n  Affected range  : <10.3.0                                                          \n  Fixed version   : 10.3.0                                                           \n  CVSS Score      : 7.3                                                              \n  CVSS Vector     : CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N  \n  EPSS Score      : 0.000450                                                         \n  EPSS Percentile : 0.173290                                                         \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-0286",
+          "ruleIndex": 3,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability   : CVE-2023-0286                                 \n  Severity        : HIGH                                          \n  Package         : pkg:pypi/cryptography@37.0.2                  \n  Affected range  : >=0.8.1,<39.0.1                               \n  Fixed version   : 39.0.1                                        \n  CVSS Score      : 7.4                                           \n  CVSS Vector     : CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H  \n  EPSS Score      : 0.003870                                      \n  EPSS Percentile : 0.739670                                      \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/cryptography-37.0.2.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/cryptography-37.0.2.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/cryptography-37.0.2.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-43804",
+          "ruleIndex": 4,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability   : CVE-2023-43804                                                   \n  Severity        : HIGH                                                             \n  Package         : pkg:pypi/urllib3@1.26.9                                          \n  Affected range  : <1.26.17                                                         \n  Fixed version   : 1.26.17                                                          \n  CVSS Score      : 7.4                                                              \n  CVSS Vector     : CVSS:4.0/AV:N/AC:L/AT:P/PR:H/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N  \n  EPSS Score      : 0.001140                                                         \n  EPSS Percentile : 0.465090                                                         \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/urllib3-1.26.9.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/urllib3-1.26.9.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/urllib3-1.26.9.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-40898",
+          "ruleIndex": 5,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability   : CVE-2022-40898                                \n  Severity        : HIGH                                          \n  Package         : pkg:pypi/wheel@0.37.1                         \n  Affected range  : <0.38.1                                       \n  Fixed version   : 0.38.1                                        \n  CVSS Score      : 7.5                                           \n  CVSS Vector     : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H  \n  EPSS Score      : 0.003450                                      \n  EPSS Percentile : 0.723940                                      \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/wheel-0.37.1.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/wheel-0.37.1.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/wheel-0.37.1.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-25577",
+          "ruleIndex": 6,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability   : CVE-2023-25577                                \n  Severity        : HIGH                                          \n  Package         : pkg:pypi/werkzeug@2.1.2                       \n  Affected range  : <2.2.3                                        \n  Fixed version   : 2.2.3                                         \n  CVSS Score      : 7.5                                           \n  CVSS Vector     : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H  \n  EPSS Score      : 0.002470                                      \n  EPSS Percentile : 0.651720                                      \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Werkzeug-2.1.2.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Werkzeug-2.1.2.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Werkzeug-2.1.2.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-37920",
+          "ruleIndex": 7,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability   : CVE-2023-37920                                \n  Severity        : HIGH                                          \n  Package         : pkg:pypi/certifi@2022.6.15                    \n  Affected range  : >=2015.4.28,<2023.7.22                        \n  Fixed version   : 2023.7.22                                     \n  CVSS Score      : 7.5                                           \n  CVSS Vector     : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N  \n  EPSS Score      : 0.001500                                      \n  EPSS Percentile : 0.523340                                      \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/certifi-2022.6.15.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/certifi-2022.6.15.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/certifi-2022.6.15.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-34069",
+          "ruleIndex": 8,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability   : CVE-2024-34069                                \n  Severity        : HIGH                                          \n  Package         : pkg:pypi/werkzeug@2.1.2                       \n  Affected range  : <3.0.3                                        \n  Fixed version   : 3.0.3                                         \n  CVSS Score      : 7.5                                           \n  CVSS Vector     : CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H  \n  EPSS Score      : 0.000450                                      \n  EPSS Percentile : 0.173290                                      \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Werkzeug-2.1.2.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Werkzeug-2.1.2.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Werkzeug-2.1.2.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-4340",
+          "ruleIndex": 9,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability   : CVE-2024-4340                                 \n  Severity        : HIGH                                          \n  Package         : pkg:pypi/sqlparse@0.3.1                       \n  Affected range  : <0.5.0                                        \n  Fixed version   : 0.5.0                                         \n  CVSS Score      : 7.5                                           \n  CVSS Vector     : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H  \n  EPSS Score      : 0.000650                                      \n  EPSS Percentile : 0.302720                                      \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/sqlparse-0.3.1.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/sqlparse-0.3.1.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/sqlparse-0.3.1.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-6345",
+          "ruleIndex": 10,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability   : CVE-2024-6345                                                    \n  Severity        : HIGH                                                             \n  Package         : pkg:pypi/setuptools@58.1.0                                       \n  Affected range  : <70.0.0                                                          \n  Fixed version   : 70.0.0                                                           \n  CVSS Score      : 7.5                                                              \n  CVSS Vector     : CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N  \n  EPSS Score      : 0.000430                                                         \n  EPSS Percentile : 0.104840                                                         \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/setuptools-58.1.0.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/setuptools-58.1.0.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/setuptools-58.1.0.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "GHSA-2m57-hf25-phgg",
+          "ruleIndex": 11,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : GHSA-2m57-hf25-phgg                           \n  Severity       : HIGH                                          \n  Package        : pkg:pypi/sqlparse@0.3.1                       \n  Affected range : <0.5.0                                        \n  Fixed version  : 0.5.0                                         \n  CVSS Score     : 7.5                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/sqlparse-0.3.1.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/sqlparse-0.3.1.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/sqlparse-0.3.1.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "GHSA-62qf-jcq8-8gxw",
+          "ruleIndex": 12,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability  : GHSA-62qf-jcq8-8gxw                           \n  Severity       : HIGH                                          \n  Package        : pkg:pypi/sqlparse@0.3.1                       \n  Affected range : <0.5.0                                        \n  Fixed version  : 0.5.0                                         \n  CVSS Score     : 7.5                                           \n  CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H  \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/sqlparse-0.3.1.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/sqlparse-0.3.1.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/sqlparse-0.3.1.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-1135",
+          "ruleIndex": 13,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability   : CVE-2024-1135                                 \n  Severity        : HIGH                                          \n  Package         : pkg:pypi/gunicorn@20.1.0                      \n  Affected range  : <22.0.0                                       \n  Fixed version   : 22.0.0                                        \n  CVSS Score      : 8.2                                           \n  CVSS Vector     : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:N  \n  EPSS Score      : 0.000430                                      \n  EPSS Percentile : 0.104840                                      \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/gunicorn-20.1.0.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/gunicorn-20.1.0.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/gunicorn-20.1.0.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2020-35653",
+          "ruleIndex": 14,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability   : CVE-2020-35653                                                   \n  Severity        : HIGH                                                             \n  Package         : pkg:pypi/pillow@8.0.0                                            \n  Affected range  : <8.1.0                                                           \n  Fixed version   : 8.1.0                                                            \n  CVSS Score      : 8.3                                                              \n  CVSS Vector     : CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:N/VA:H/SC:N/SI:N/SA:N  \n  EPSS Score      : 0.002580                                                         \n  EPSS Percentile : 0.659510                                                         \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2020-35654",
+          "ruleIndex": 15,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability   : CVE-2020-35654                                                   \n  Severity        : HIGH                                                             \n  Package         : pkg:pypi/pillow@8.0.0                                            \n  Affected range  : <8.1.0                                                           \n  Fixed version   : 8.1.0                                                            \n  CVSS Score      : 8.6                                                              \n  CVSS Vector     : CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N  \n  EPSS Score      : 0.003650                                                         \n  EPSS Percentile : 0.731780                                                         \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-23437",
+          "ruleIndex": 16,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability   : CVE-2021-23437                                                   \n  Severity        : HIGH                                                             \n  Package         : pkg:pypi/pillow@8.0.0                                            \n  Affected range  : >=5.2.0,<8.3.2                                                   \n  Fixed version   : 8.3.2                                                            \n  CVSS Score      : 8.7                                                              \n  CVSS Vector     : CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N  \n  EPSS Score      : 0.006690                                                         \n  EPSS Percentile : 0.803840                                                         \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-25290",
+          "ruleIndex": 17,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability   : CVE-2021-25290                                                   \n  Severity        : HIGH                                                             \n  Package         : pkg:pypi/pillow@8.0.0                                            \n  Affected range  : <8.1.1                                                           \n  Fixed version   : 8.1.1                                                            \n  CVSS Score      : 8.7                                                              \n  CVSS Vector     : CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N  \n  EPSS Score      : 0.002460                                                         \n  EPSS Percentile : 0.650190                                                         \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-25291",
+          "ruleIndex": 18,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability   : CVE-2021-25291                                                   \n  Severity        : HIGH                                                             \n  Package         : pkg:pypi/pillow@8.0.0                                            \n  Affected range  : <8.2.0                                                           \n  Fixed version   : 8.2.0                                                            \n  CVSS Score      : 8.7                                                              \n  CVSS Vector     : CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N  \n  EPSS Score      : 0.001160                                                         \n  EPSS Percentile : 0.469670                                                         \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-25293",
+          "ruleIndex": 19,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability   : CVE-2021-25293                                                   \n  Severity        : HIGH                                                             \n  Package         : pkg:pypi/pillow@8.0.0                                            \n  Affected range  : >=4.3.0,<8.1.1                                                   \n  Fixed version   : 8.1.1                                                            \n  CVSS Score      : 8.7                                                              \n  CVSS Vector     : CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N  \n  EPSS Score      : 0.001160                                                         \n  EPSS Percentile : 0.469670                                                         \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-27921",
+          "ruleIndex": 20,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability   : CVE-2021-27921                                                   \n  Severity        : HIGH                                                             \n  Package         : pkg:pypi/pillow@8.0.0                                            \n  Affected range  : <8.1.1                                                           \n  Fixed version   : 8.1.1                                                            \n  CVSS Score      : 8.7                                                              \n  CVSS Vector     : CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N  \n  EPSS Score      : 0.002420                                                         \n  EPSS Percentile : 0.646710                                                         \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-27922",
+          "ruleIndex": 21,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability   : CVE-2021-27922                                                   \n  Severity        : HIGH                                                             \n  Package         : pkg:pypi/pillow@8.0.0                                            \n  Affected range  : <8.1.1                                                           \n  Fixed version   : 8.1.1                                                            \n  CVSS Score      : 8.7                                                              \n  CVSS Vector     : CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N  \n  EPSS Score      : 0.002420                                                         \n  EPSS Percentile : 0.646710                                                         \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-27923",
+          "ruleIndex": 22,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability   : CVE-2021-27923                                                   \n  Severity        : HIGH                                                             \n  Package         : pkg:pypi/pillow@8.0.0                                            \n  Affected range  : <8.1.1                                                           \n  Fixed version   : 8.1.1                                                            \n  CVSS Score      : 8.7                                                              \n  CVSS Vector     : CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N  \n  EPSS Score      : 0.002420                                                         \n  EPSS Percentile : 0.646710                                                         \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-28676",
+          "ruleIndex": 23,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability   : CVE-2021-28676                                                   \n  Severity        : HIGH                                                             \n  Package         : pkg:pypi/pillow@8.0.0                                            \n  Affected range  : <8.2.0                                                           \n  Fixed version   : 8.2.0                                                            \n  CVSS Score      : 8.7                                                              \n  CVSS Vector     : CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N  \n  EPSS Score      : 0.003480                                                         \n  EPSS Percentile : 0.725050                                                         \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-28677",
+          "ruleIndex": 24,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability   : CVE-2021-28677                                                   \n  Severity        : HIGH                                                             \n  Package         : pkg:pypi/pillow@8.0.0                                            \n  Affected range  : <8.2.0                                                           \n  Fixed version   : 8.2.0                                                            \n  CVSS Score      : 8.7                                                              \n  CVSS Vector     : CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N  \n  EPSS Score      : 0.001580                                                         \n  EPSS Percentile : 0.533850                                                         \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-40897",
+          "ruleIndex": 25,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability   : CVE-2022-40897                                                   \n  Severity        : HIGH                                                             \n  Package         : pkg:pypi/setuptools@58.1.0                                       \n  Affected range  : <65.5.1                                                          \n  Fixed version   : 65.5.1                                                           \n  CVSS Score      : 8.7                                                              \n  CVSS Vector     : CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:L/SI:L/SA:N  \n  EPSS Score      : 0.005320                                                         \n  EPSS Percentile : 0.777890                                                         \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/setuptools-58.1.0.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/setuptools-58.1.0.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/setuptools-58.1.0.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-41323",
+          "ruleIndex": 26,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability   : CVE-2022-41323                                                   \n  Severity        : HIGH                                                             \n  Package         : pkg:pypi/django@4.0.4                                            \n  Affected range  : >=4.0,<4.0.8                                                     \n  Fixed version   : 4.0.8                                                            \n  CVSS Score      : 8.7                                                              \n  CVSS Vector     : CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N  \n  EPSS Score      : 0.004700                                                         \n  EPSS Percentile : 0.763200                                                         \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Django-4.0.4.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Django-4.0.4.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Django-4.0.4.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-45198",
+          "ruleIndex": 27,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability   : CVE-2022-45198                                                   \n  Severity        : HIGH                                                             \n  Package         : pkg:pypi/pillow@8.0.0                                            \n  Affected range  : <9.2.0                                                           \n  Fixed version   : 9.2.0                                                            \n  CVSS Score      : 8.7                                                              \n  CVSS Vector     : CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N  \n  EPSS Score      : 0.002980                                                         \n  EPSS Percentile : 0.701520                                                         \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-23969",
+          "ruleIndex": 28,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability   : CVE-2023-23969                                                   \n  Severity        : HIGH                                                             \n  Package         : pkg:pypi/django@4.0.4                                            \n  Affected range  : >=4.0a1,<4.0.9                                                   \n  Fixed version   : 4.0.9                                                            \n  CVSS Score      : 8.7                                                              \n  CVSS Vector     : CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N  \n  EPSS Score      : 0.014240                                                         \n  EPSS Percentile : 0.870460                                                         \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Django-4.0.4.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Django-4.0.4.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Django-4.0.4.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-24580",
+          "ruleIndex": 29,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability   : CVE-2023-24580                                                   \n  Severity        : HIGH                                                             \n  Package         : pkg:pypi/django@4.0.4                                            \n  Affected range  : >=4.0a1,<4.0.10                                                  \n  Fixed version   : 4.0.10                                                           \n  CVSS Score      : 8.7                                                              \n  CVSS Vector     : CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N  \n  EPSS Score      : 0.003550                                                         \n  EPSS Percentile : 0.728010                                                         \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Django-4.0.4.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Django-4.0.4.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Django-4.0.4.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-30861",
+          "ruleIndex": 30,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability   : CVE-2023-30861                                                   \n  Severity        : HIGH                                                             \n  Package         : pkg:pypi/flask@2.1.2                                             \n  Affected range  : <2.2.5                                                           \n  Fixed version   : 2.2.5                                                            \n  CVSS Score      : 8.7                                                              \n  CVSS Vector     : CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N  \n  EPSS Score      : 0.002390                                                         \n  EPSS Percentile : 0.626980                                                         \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Flask-2.1.2.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Flask-2.1.2.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Flask-2.1.2.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-36053",
+          "ruleIndex": 31,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability   : CVE-2023-36053                                                   \n  Severity        : HIGH                                                             \n  Package         : pkg:pypi/django@4.0.4                                            \n  Affected range  : >=4.0a1,<4.1.10                                                  \n  Fixed version   : 4.1.10                                                           \n  CVSS Score      : 8.7                                                              \n  CVSS Vector     : CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N  \n  EPSS Score      : 0.002090                                                         \n  EPSS Percentile : 0.595930                                                         \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Django-4.0.4.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Django-4.0.4.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Django-4.0.4.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-44271",
+          "ruleIndex": 32,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability   : CVE-2023-44271                                                   \n  Severity        : HIGH                                                             \n  Package         : pkg:pypi/pillow@8.0.0                                            \n  Affected range  : <10.0.0                                                          \n  Fixed version   : 10.0.0                                                           \n  CVSS Score      : 8.7                                                              \n  CVSS Vector     : CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N  \n  EPSS Score      : 0.000850                                                         \n  EPSS Percentile : 0.376650                                                         \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-50782",
+          "ruleIndex": 33,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability   : CVE-2023-50782                                                   \n  Severity        : HIGH                                                             \n  Package         : pkg:pypi/cryptography@37.0.2                                     \n  Affected range  : <42.0.0                                                          \n  Fixed version   : 42.0.0                                                           \n  CVSS Score      : 8.7                                                              \n  CVSS Vector     : CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N  \n  EPSS Score      : 0.000980                                                         \n  EPSS Percentile : 0.424310                                                         \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/cryptography-37.0.2.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/cryptography-37.0.2.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/cryptography-37.0.2.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-25287",
+          "ruleIndex": 34,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability   : CVE-2021-25287                                                   \n  Severity        : HIGH                                                             \n  Package         : pkg:pypi/pillow@8.0.0                                            \n  Affected range  : >=2.4.0,<8.2.0                                                   \n  Fixed version   : 8.2.0                                                            \n  CVSS Score      : 8.8                                                              \n  CVSS Vector     : CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:H/SC:N/SI:N/SA:N  \n  EPSS Score      : 0.003530                                                         \n  EPSS Percentile : 0.727220                                                         \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-25288",
+          "ruleIndex": 35,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability   : CVE-2021-25288                                                   \n  Severity        : HIGH                                                             \n  Package         : pkg:pypi/pillow@8.0.0                                            \n  Affected range  : >=2.4.0,<8.2.0                                                   \n  Fixed version   : 8.2.0                                                            \n  CVSS Score      : 8.8                                                              \n  CVSS Vector     : CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:H/SC:N/SI:N/SA:N  \n  EPSS Score      : 0.003530                                                         \n  EPSS Percentile : 0.727220                                                         \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-24303",
+          "ruleIndex": 36,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability   : CVE-2022-24303                                                   \n  Severity        : HIGH                                                             \n  Package         : pkg:pypi/pillow@8.0.0                                            \n  Affected range  : <9.0.1                                                           \n  Fixed version   : 9.0.1                                                            \n  CVSS Score      : 8.8                                                              \n  CVSS Vector     : CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:H/SC:N/SI:N/SA:N  \n  EPSS Score      : 0.002970                                                         \n  EPSS Percentile : 0.700980                                                         \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-36359",
+          "ruleIndex": 37,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability   : CVE-2022-36359                                \n  Severity        : HIGH                                          \n  Package         : pkg:pypi/django@4.0.4                         \n  Affected range  : >=4.0,<4.0.7                                  \n  Fixed version   : 4.0.7                                         \n  CVSS Score      : 8.8                                           \n  CVSS Vector     : CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H  \n  EPSS Score      : 0.004230                                      \n  EPSS Percentile : 0.750100                                      \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Django-4.0.4.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Django-4.0.4.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Django-4.0.4.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-4863",
+          "ruleIndex": 38,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability   : CVE-2023-4863                                 \n  Severity        : HIGH                                          \n  Package         : pkg:pypi/pillow@8.0.0                         \n  Affected range  : <10.0.1                                       \n  Fixed version   : 10.0.1                                        \n  CVSS Score      : 8.8                                           \n  CVSS Vector     : CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H  \n  EPSS Score      : 0.443150                                      \n  EPSS Percentile : 0.975030                                      \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2019-20477",
+          "ruleIndex": 39,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability   : CVE-2019-20477                                                   \n  Severity        : CRITICAL                                                         \n  Package         : pkg:pypi/pyyaml@5.1                                              \n  Affected range  : >=5.1,<5.2                                                       \n  Fixed version   : 5.2                                                              \n  CVSS Score      : 9.3                                                              \n  CVSS Vector     : CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N  \n  EPSS Score      : 0.168120                                                         \n  EPSS Percentile : 0.962190                                                         \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/PyYAML-5.1.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/PyYAML-5.1.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/PyYAML-5.1.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2020-14343",
+          "ruleIndex": 40,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability   : CVE-2020-14343                                                   \n  Severity        : CRITICAL                                                         \n  Package         : pkg:pypi/pyyaml@5.1                                              \n  Affected range  : <5.4                                                             \n  Fixed version   : 5.4                                                              \n  CVSS Score      : 9.3                                                              \n  CVSS Vector     : CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N  \n  EPSS Score      : 0.002830                                                         \n  EPSS Percentile : 0.693790                                                         \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/PyYAML-5.1.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/PyYAML-5.1.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/PyYAML-5.1.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2020-1747",
+          "ruleIndex": 41,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability   : CVE-2020-1747                                                    \n  Severity        : CRITICAL                                                         \n  Package         : pkg:pypi/pyyaml@5.1                                              \n  Affected range  : >=5.1b7,<5.3.1                                                   \n  Fixed version   : 5.3.1                                                            \n  CVSS Score      : 9.3                                                              \n  CVSS Vector     : CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N  \n  EPSS Score      : 0.005680                                                         \n  EPSS Percentile : 0.784950                                                         \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/PyYAML-5.1.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/PyYAML-5.1.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/PyYAML-5.1.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-25289",
+          "ruleIndex": 42,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability   : CVE-2021-25289                                                   \n  Severity        : CRITICAL                                                         \n  Package         : pkg:pypi/pillow@8.0.0                                            \n  Affected range  : <8.1.1                                                           \n  Fixed version   : 8.1.1                                                            \n  CVSS Score      : 9.3                                                              \n  CVSS Vector     : CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N  \n  EPSS Score      : 0.002440                                                         \n  EPSS Percentile : 0.648740                                                         \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-34552",
+          "ruleIndex": 43,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability   : CVE-2021-34552                                                   \n  Severity        : CRITICAL                                                         \n  Package         : pkg:pypi/pillow@8.0.0                                            \n  Affected range  : <8.3.0                                                           \n  Fixed version   : 8.3.0                                                            \n  CVSS Score      : 9.3                                                              \n  CVSS Vector     : CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N  \n  EPSS Score      : 0.005870                                                         \n  EPSS Percentile : 0.788850                                                         \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-22817",
+          "ruleIndex": 44,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability   : CVE-2022-22817                                                   \n  Severity        : CRITICAL                                                         \n  Package         : pkg:pypi/pillow@8.0.0                                            \n  Affected range  : <9.0.1                                                           \n  Fixed version   : 9.0.1                                                            \n  CVSS Score      : 9.3                                                              \n  CVSS Vector     : CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N  \n  EPSS Score      : 0.003850                                                         \n  EPSS Percentile : 0.739000                                                         \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-34265",
+          "ruleIndex": 45,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability   : CVE-2022-34265                                                   \n  Severity        : CRITICAL                                                         \n  Package         : pkg:pypi/django@4.0.4                                            \n  Affected range  : >=4.0a1,<4.0.6                                                   \n  Fixed version   : 4.0.6                                                            \n  CVSS Score      : 9.3                                                              \n  CVSS Vector     : CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N  \n  EPSS Score      : 0.176170                                                         \n  EPSS Percentile : 0.963020                                                         \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Django-4.0.4.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Django-4.0.4.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Django-4.0.4.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-31047",
+          "ruleIndex": 46,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability   : CVE-2023-31047                                                   \n  Severity        : CRITICAL                                                         \n  Package         : pkg:pypi/django@4.0.4                                            \n  Affected range  : >=4.0a1,<4.1.9                                                   \n  Fixed version   : 4.1.9                                                            \n  CVSS Score      : 9.3                                                              \n  CVSS Vector     : CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N  \n  EPSS Score      : 0.003800                                                         \n  EPSS Percentile : 0.737100                                                         \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Django-4.0.4.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Django-4.0.4.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Django-4.0.4.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-50447",
+          "ruleIndex": 47,
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "  Vulnerability   : CVE-2023-50447                                                   \n  Severity        : CRITICAL                                                         \n  Package         : pkg:pypi/pillow@8.0.0                                            \n  Affected range  : <10.2.0                                                          \n  Fixed version   : 10.2.0                                                           \n  CVSS Score      : 9.3                                                              \n  CVSS Vector     : CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N  \n  EPSS Score      : 0.000740                                                         \n  EPSS Percentile : 0.337300                                                         \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/METADATA"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/RECORD"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/local/lib/python3.11/site-packages/Pillow-8.0.0.dist-info/top_level.txt"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

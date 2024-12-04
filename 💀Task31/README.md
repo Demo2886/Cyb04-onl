@@ -1,7 +1,7 @@
 
 # Рассмотрим содержимое YAML-файла описывающего GitHub Actions Workflow, состоящий из двух задач (`jobs`): **SAST (Static Application Security Testing)** для проверки безопасности кода с помощью инструмента Bandit и **Image Scan** для проверки Docker-образа на уязвимости с помощью Docker Scout. Рассмотрим каждую секцию подробнее:
 
-## Намеренная уязвимость безопасности веб-приложений в Django [ссылка на репозиторий](https://github.com/Demo2886/devsecops-pygoat).
+## Намеренная уязвимость безопасности веб-приложений в Django [cсылка на репозиторий GitHub Actions](https://github.com/Demo2886/devsecops-pygoat).
 
 ```yaml
 name: CI
@@ -51,13 +51,21 @@ jobs:
    - name: Build Docker Image
      run: docker build -f Dockerfile -t myapp:latest .
 
+   # - name: Docker Scout Scan
+     # run: |
+       # curl -fsSL https://raw.githubusercontent.com/docker/scout-cli/main/install.sh -o install-scout.sh
+       # sh install-scout.sh
+       # echo ${{ secrets.REPO_PWD }} | docker login -u ${{ secrets.REPO_USER }} --password-stdin
+       # docker scout quickview
+       # docker scout cves
+
 
    - name: Docker Scout Scan
      uses: docker/scout-action@v1.15.1
      with:
        dockerhub-user: ${{ secrets.REPO_USER }}
        dockerhub-password: ${{ secrets.REPO_PWD }}
-       command: quickview,cves
+       command: quickview,cves    
        only-severities: critical,high
        sarif-file: scout-report.sarif
 
@@ -67,7 +75,6 @@ jobs:
      with:
        name: docker-scout-findings
        path: scout-report.sarif
-
 
 ```
 

@@ -119,7 +119,12 @@ jobs:
    - `-o bandit-report.json`: Сохраняет отчет в файл `bandit-report.json`.
 
 [Артефакт сканирования Bandit](/💀Task31/artifacts/bandit-report.json)
+
+---
+
 ![img](/💀Task31/img/bandit.png)
+
+---
 
 5. **Upload Artifact**: 
    ```yaml

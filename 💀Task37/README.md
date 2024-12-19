@@ -23,5 +23,5 @@
  - bandit18 - cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8
  - bandit19 - 0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
  - bandit20 - echo -n '0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO' | nc -l -p 1234 & 
- ./suconnect 1234
- EeoULMCra2q0dSkYj561DX7s1CpBuOBt
+    - ./suconnect 1234
+    - EeoULMCra2q0dSkYj561DX7s1CpBuOBt

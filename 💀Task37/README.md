@@ -13,7 +13,9 @@
  - bandit10 - dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
  - bandit11 - 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
  - bandit12 - FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
- - bandit13 - Я зашел на сервер как bandit13 и нашел файл 'sshkey.private' в домашнем каталоге. Зная местоположение файла, я могу перенести его на свою машину. И теперь можно использовать ключ для входа на новый уровень: ssh -i sshkey.private bandit14@bandit.labs.overthewire.org -p 2220
+ - bandit13 - Я зашел на сервер как bandit13 и нашел файл 'sshkey.private' в домашнем каталоге. 
+    - Зная местоположение файла, я могу перенести его на свою машину. 
+    - И теперь можно использовать ключ для входа на новый уровень: ssh -i sshkey.private bandit14@bandit.labs.overthewire.org -p 2220
  - bandit14 - 8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
  - bandit15 - kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx
  - bandit16 - openssl s_client -ign_eof -connect <destination:port>

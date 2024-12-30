@@ -348,6 +348,6 @@ echo "Подробнее: $permalink"
 <details>
 <summary><b>Установка setoolkit на ubuntu.</b></summary>
 
-[Установка Social-Engineer Toolkit (SET)](/Cyb04-onl/💀Task9/README.md)
+[Установка Social-Engineer Toolkit (SET)](/💀Task9/README.md)
 
 </details>

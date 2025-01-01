@@ -377,7 +377,7 @@ echo "Подробнее: $permalink"
 <details>
 <summary><b>Установите Elasticsearch с пакетом Debian.</b></summary>
 
-![img](/Cyb04-onl/Project/img/elk.png)
+![img](/Project/img/elk.png)
 
 **Загрузите и установите публичный ключ подписи:**
 

@@ -371,3 +371,168 @@ echo "Подробнее: $permalink"
 [Установка Social-Engineer Toolkit (SET)](/💀Task9/README.md)
 
 </details>
+
+💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀
+
+<details>
+<summary><b>Установите Elasticsearch с пакетом Debian.</b></summary>
+
+![img](/Cyb04-onl/Project/img/elk.png)
+
+**Загрузите и установите публичный ключ подписи:**
+
+```bash
+wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo gpg --dearmor -o /usr/share/keyrings/elasticsearch-keyring.gpg
+```
+
+**Сохраните определение репозитория в /etc/apt/sources.list.d/elastic-8.x.list:**
+
+```bash
+echo "deb [signed-by=/usr/share/keyrings/elasticsearch-keyring.gpg] https://artifacts.elastic.co/packages/8.x/apt stable main" | sudo tee /etc/apt/sources.list.d/elastic-8.x.list
+```
+
+**Вы можете установить пакет Elasticsearch Debian с помощью:**
+
+```bash
+sudo apt-get update && sudo apt-get install elasticsearch
+```
+
+**Скопируйте вывод терминала команды установки в локальный файл. В частности, вам понадобится пароль для встроенной учетной записи эластичного суперпользователя. Вывод также содержит команды, позволяющие запускать Elasticsearch как службу, которые вы будете использовать на следующем шаге.**
+
+```bash
+--------------------------- Security autoconfiguration information ------------------------------
+
+Authentication and authorization are enabled.
+TLS for the transport and HTTP layers is enabled and configured.
+
+The generated password for the elastic built-in superuser is : <ELASTIC_PASSWORD>
+
+If this node should join an existing cluster, you can reconfigure this with
+'/usr/share/elasticsearch/bin/elasticsearch-reconfigure-node --enrollment-token <token-here>'
+after creating an enrollment token on your existing cluster.
+
+You can complete the following actions at any time:
+
+Reset the password of the elastic built-in superuser with 
+'/usr/share/elasticsearch/bin/elasticsearch-reset-password -u elastic'.
+
+Generate an enrollment token for Kibana instances with 
+ '/usr/share/elasticsearch/bin/elasticsearch-create-enrollment-token -s kibana'.
+
+Generate an enrollment token for Elasticsearch nodes with 
+'/usr/share/elasticsearch/bin/elasticsearch-create-enrollment-token -s node'.
+```
+
+**Рекомендуем хранить `elastic` пароль как переменную среды в вашей оболочке. Например:**
+
+```bash
+export ELASTIC_PASSWORD="your_password"
+```
+
+**Выполните следующие две команды, чтобы Elasticsearch работал как служба с использованием systemd. Это позволяет Elasticsearch запускаться автоматически при перезагрузке хост-системы. Подробности об этом и следующих шагах можно найти в разделе «Запуск Elasticsearch с помощью systemd».**
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl enable elasticsearch.service
+```
+
+**Настройте узел Elasticsearch для подключения.**
+**Откройте файл конфигурации Elasticsearch в текстовом редакторе, например vim:**
+```bash
+sudo vim /etc/elasticsearch/elasticsearch.yml
+```
+
+**Раскомментируйте строку network.host: 192.168.0.1 и замените адрес на `localhost`. Например:**
+```bash
+network.host: localhost
+```
+
+**Теперь пришло время запустить службу Elasticsearch:**
+```bash
+sudo systemctl start elasticsearch.service
+```
+**Убедитесь, что Elasticsearch работает правильно.**
+
+```bash
+sudo curl --cacert /etc/elasticsearch/certs/http_ca.crt -u elastic:$ELASTIC_PASSWORD https://localhost:9200
+```
+
+**Если все в порядке, команда возвращает такой ответ:**
+```bash
+{
+  "name" : "Cp9oae6",
+  "cluster_name" : "elasticsearch",
+  "cluster_uuid" : "AT69_C_DTp-1qgIJlatQqA",
+  "version" : {
+    "number" : "{version_qualified}",
+    "build_type" : "{build_type}",
+    "build_hash" : "f27399d",
+    "build_flavor" : "default",
+    "build_date" : "2016-03-30T09:51:41.449Z",
+    "build_snapshot" : false,
+    "lucene_version" : "{lucene_version}",
+    "minimum_wire_compatibility_version" : "1.2.3",
+    "minimum_index_compatibility_version" : "1.2.3"
+  },
+  "tagline" : "You Know, for Search"
+}
+```
+**Сгенерируйте токен регистрации узла:**
+
+```bash
+sudo /usr/share/elasticsearch/bin/elasticsearch-create-enrollment-token -s node
+```
+**Скопируйте сгенерированный токен регистрации из выходных данных команды. Срок действия токена регистрации составляет 30 минут. Если команда elasticsearch-reconfigure-node возвращает ошибку «Неверный токен регистрации», попробуйте создать новый токен.**
+
+## Установите Kibana с пакетом Debian
+
+```bash
+sudo apt-get update && sudo apt-get install kibana
+```
+
+**Запустите команду elasticsearch-create-enrollment-token с опцией -s kibana, чтобы сгенерировать токен регистрации Kibana:**
+**Скопируйте сгенерированный токен регистрации из выходных данных команды.**
+```bash
+sudo systemctl daemon-reload
+sudo systemctl enable kibana.service
+```
+**Откройте файл конфигурации Kibana для редактирования:**
+```bash
+sudo vim /etc/kibana/kibana.yml
+```
+**Раскомментируйте строку server.host: localhost и замените адрес по умолчанию значением inet, которое вы скопировали из команды ifconfig. Например:**
+```bash
+server.host: 10.128.0.28
+```
+**Запустите сервис Kibana:**
+```bash
+sudo systemctl start kibana.service
+```
+**Запустите команду статуса, чтобы получить подробную информацию о сервисе Kibana.**
+```bash
+sudo systemctl status kibana
+```
+**Запуск Kibana может занять минуту или две, поэтому обновите страницу, если вы не видите подсказку сразу.**
+
+**В выводе команды status URL-адрес отображается: 
+  - Адрес хоста для доступа к Kibana
+  - Шестизначный код подтверждения
+  - Например:**
+
+```bash
+Kibana has not been configured.
+Go to http://10.128.0.28:5601/?code=<code> to get started.
+```
+**Запишите код подтверждения.**
+
+**Откройте веб-браузер по внешнему IP-адресу хост-компьютера Kibana, например: http://<kibana-host-address>:5601.**
+
+**Когда Kibana запустится, вам будет предложено предоставить токен регистрации. Вставьте токен регистрации Kibana, который вы создали ранее.**
+
+**Если вам будет предложено ввести код подтверждения `<code>`, скопируйте и вставьте шестизначный код, возвращенный командой статуса. Затем дождитесь завершения настройки.**
+
+**Укажите `elastic` в качестве имени пользователя и укажите пароль `<ELASTIC_PASSWORD>`.**
+
+</details>
+
+

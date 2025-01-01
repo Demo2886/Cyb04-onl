@@ -533,6 +533,12 @@ Go to http://10.128.0.28:5601/?code=<code> to get started.
 
 **Укажите `elastic` в качестве имени пользователя и укажите пароль `<ELASTIC_PASSWORD>`.**
 
+![img](/Project/img/elk-win.png)
+![img](/Project/img/elk-ubun.png)
+![img](/Project/img/win-elk.png)
+![img](/Project/img/elk-linux.png)
+
+
 </details>
 
 

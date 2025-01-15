@@ -6,10 +6,6 @@
 
 ### Hi there 👋
 
-<div id="header" align="center">
-  <img src="https://raw.githubusercontent.com/Demo2886/Cyb04-onl/master/%F0%9F%92%80InfoMysor%F0%9F%92%80/img/giphy.webp"/>
-</div>
-
 <div align="center">
   <h2>🐍 My Project 🐍</h2>
   <br>
